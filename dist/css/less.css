@@ -8701,12 +8701,12 @@ h6 {
 .blog-items {
   width: 75%;
   display: inline-block;
-  margin-top: 20px;
 }
 .blog-item {
   padding: 15px;
   background-color: #ffffff;
   margin-bottom: 15px;
+  box-shadow: 0px 0px 5px -1px rgba(0, 0, 0, 0.4);
 }
 .blog-item .subhead {
   font-size: 24px;
