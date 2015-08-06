@@ -1919,11 +1919,9 @@ body {
   font-family: "Raleway";
   background-color: #cfe7f0;
 }
-/* line 6, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_page.scss */
 h1 {
   font-size: 36px;
 }
-/* line 7, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_page.scss */
 h2 {
   font-size: 30px;
 }
@@ -1953,69 +1951,6 @@ h6 {
   color: #000;
   font-family: "Raleway";
   font-size: 20px;
-}
-#body {
-  min-height: 70vh;
-}
-.landing {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  background-color: #cfe7f0;
-  overflow: auto;
-}
-.landing .text-container {
-  float: right;
-  width: 50%;
-}
-.landing .image-container {
-  float: left;
-  width: 40%;
-  text-align: left;
-}
-.landing .image-container .img-scale {
-  display: inline-block;
-  max-width: 400px;
-}
-.landing .subhead {
-  font-family: 'Dosis', sans-serif;
-  text-transform: uppercase;
-  font-size: 24px;
-}
-.landing .meta {
-  font-size: 18px;
-}
-@media (min-width: 800px) {
-  .landing .landing-content .landing-text {
-    margin-top: 5%;
-  }
-}
-@media (min-width: 1200px) {
-  .landing .landing-content .landing-text {
-    margin-top: 10%;
-  }
-}
-.landing .landing-content .landing-text h1 {
-  color: #40768c;
-}
-.landing .landing-content .landing-text h4 {
-  line-height: 1.4em;
-  color: #000000;
-  font-weight: normal;
-}
-@media (min-width: 400px) {
-  .landing .landing-content .landing-text h4 {
-    font-size: 16px;
-  }
-}
-@media (min-width: 600px) {
-  .landing .landing-content .landing-text h4 {
-    font-size: 18px;
-  }
-}
-@media (min-width: 800px) {
-  .landing .landing-content .landing-text h4 {
-    font-size: 20px;
-  }
 }
 .navbar {
   background: #ffffff;
@@ -2090,6 +2025,57 @@ h6 {
 .about {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+#body {
+  min-height: 70vh;
+}
+.landing {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: #cfe7f0;
+  overflow: auto;
+}
+.landing .text-container {
+  float: right;
+  width: 50%;
+}
+.landing .subhead {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.landing .meta {
+  font-size: 18px;
+}
+.landing .image-container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .landing .image-container {
+    float: left;
+    width: 40%;
+    text-align: left;
+  }
+}
+.landing .image-container .img-scale {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 600px) {
+  .landing .image-container .img-scale {
+    display: inline-block;
+    max-width: 400px;
+  }
+}
+.landing .btn-container {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 .blog {
   margin-top: 40px;

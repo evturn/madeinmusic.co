@@ -1,0 +1,27 @@
+.landing {
+
+  .image-container {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    text-align: center;
+
+    @media (min-width: @sm) {
+      float: left;
+      width: 40%;
+      text-align: left;
+    }
+
+    .img-scale {
+      width: 100px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (min-width: @sm) {
+        display: inline-block;
+        max-width: 400px;
+      }
+    }
+  }
+}
