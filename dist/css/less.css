@@ -2046,13 +2046,14 @@ h6 {
   color: #dd4438;
 }
 .about {
-  margin-top: 40px;
   margin-bottom: 40px;
+}
+.about .info-container {
+  margin-top: 20px;
 }
 .landing {
   height: 100vh;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 30px;
   background-color: #cfe7f0;
 }
 .landing .image-container {
