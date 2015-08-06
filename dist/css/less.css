@@ -2064,16 +2064,15 @@ h6 {
 }
 .landing .image-container .inner-text {
   position: absolute;
-  top: 100px;
-  left: 0px;
+  top: 25px;
+  left: -4px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
 }
 .landing .image-container .subhead {
-  margin-left: 35%;
-  text-align: left;
-  font-size: 14px;
+  color: #46758e;
+  font-size: 23px;
   font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
