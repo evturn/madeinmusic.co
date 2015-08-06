@@ -8695,8 +8695,11 @@ h6 {
 .blog .title-container {
   padding-top: 20px;
 }
+.blog .stats-container {
+  margin-top: 30px;
+}
 .blog-items {
-  width: 66%;
+  width: 75%;
   display: inline-block;
   margin-top: 20px;
 }
@@ -8714,15 +8717,16 @@ h6 {
   color: #ffffff;
 }
 .categories {
-  width: 32%;
+  width: 24%;
   display: inline-block;
   vertical-align: top;
   text-align: right;
 }
 .categories .subhead {
-  font-size: 24px;
+  font-size: 22px;
 }
-.categories .meta {
+.categories .meta,
+.categories .meta .btn-red {
   font-size: 16px;
 }
 .title-container,
