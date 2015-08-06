@@ -2002,48 +2002,24 @@ h6 {
   margin: 0;
   padding-top: 20px;
   color: #46758e;
-  text-align: center;
+  text-align: left;
+}
+.footer ul {
+  margin-bottom: 10px;
 }
 .footer li {
   display: inline-block;
   margin-right: 10px;
 }
-.contact {
-  background: #000;
-  color: #ffffff;
-  font-family: "Raleway";
-  list-style-type: none;
-}
-.contact .fa {
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  color: #ffffff;
-  width: 40px;
-  height: 40px;
-  outline: none;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  margin-left: 10px;
-}
-.contact .social-icons a:hover {
-  border: 1px solid #dd4438;
-  color: #dd4438;
-}
-.contact ul {
-  padding-left: 0;
-}
-.contact ul li {
-  list-style: none;
-  margin-bottom: 8px;
-  font-size: 16px;
-}
-.contact ul li a {
-  color: #cfe7f0;
+.footer a {
   text-decoration: none;
+  font-size: 11px;
+  color: #46758e;
 }
-.contact ul li a:hover {
-  color: #dd4438;
+.footer p {
+  text-align: center;
+  font-size: 10px;
+  margin-bottom: 10px;
 }
 .about {
   margin-bottom: 40px;
