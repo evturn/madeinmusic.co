@@ -8719,7 +8719,11 @@ h6 {
   transition: 0.3s;
 }
 .blog-item .subhead:hover a {
-  color: #ffffff;
+  color: #46758e;
+}
+.blog-item .read-more a {
+  color: #46758e;
+  text-decoration: none;
 }
 .categories {
   width: 24%;
