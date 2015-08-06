@@ -12,7 +12,7 @@ module.exports = {
     min: 'style.min.css',
     vendor: {
       src: [
-        'public/css/vendor/animate.css',
+        'public/css/vendor/animate.css'
       ],
       filename: 'vendor.css',
       min: 'vendor.min.css'
@@ -40,4 +40,19 @@ module.exports = {
       min: 'vendor.min.js'
     }
   },
-}
+
+  jshint: {
+    src: [
+      'config/**/*.js',
+      'routes/**/*.js',
+      'gulpfile.js',
+      'server.js'
+    ],
+    watch: [
+      'config/**/*.js',
+      'routes/**/*.js',
+      'gulpfile.js',
+      'keystone.js'
+    ]
+  }
+};

@@ -3,7 +3,6 @@
   "camelcase": true,
   "curly": false,  /* custom */
   "eqeqeq": true,
-  "es3": true,
   "forin": true,
   "freeze": true,
   "immed": true,
@@ -15,7 +14,7 @@
   "nonbsp": true,
   "nonew": true,
   "plusplus": false,  /* custom */
-  "quotmark": true,
+  "quotmark": false,
   "undef": true,
   "unused": true,
   "strict": false, /* enable later */
@@ -29,7 +28,7 @@
   "boss": true,  /* custom */
   "debug": false,
   "eqnull": true,  /* custom */
-  "esnext": false,
+  "esnext": true,
   "evil": false,
   "expr": false,
   "funcscope": false,

@@ -48,3 +48,18 @@ gulp.task('js:vendor', function() {
     .pipe(gulp.dest(paths.js.vendor.dest))
     .on('error', gutil.log);
 });
+
+gulp.task('lint', function() {
+  gulp.src(paths.jshint.src)
+    .pipe($.plumber(options.plumber))
+    .pipe($.jshint())
+    .pipe($.notify(options.notify.jshint));
+});
+
+gulp.task('reloader', ['less', 'js'], function() {
+  browserSync.reload();
+});
+
+gulp.task('browsersync', function() {
+  browserSync.init(options.browserSync);
+});

@@ -1,5 +1,4 @@
-var gulp = require('gulp-util'),
-    gutil = require('gulp-util'),
+var gutil = require('gulp-util'),
     $ = require('gulp-load-plugins')();
 
 module.exports = {
