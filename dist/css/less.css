@@ -2009,7 +2009,7 @@ h6 {
 }
 .footer li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 2px;
 }
 .footer a {
   text-decoration: none;
@@ -2020,6 +2020,9 @@ h6 {
   text-align: center;
   font-size: 10px;
   margin-bottom: 10px;
+}
+.footer .fa {
+  font-size: 1.5em;
 }
 .about {
   margin-bottom: 40px;
