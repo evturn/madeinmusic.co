@@ -14,7 +14,8 @@ module.exports = {
       src: [
         'public/css/vendor/animate.css',
       ],
-      filename: 'vendor.css'
+      filename: 'vendor.css',
+      min: 'vendor.min.css'
     }
   }
 }
