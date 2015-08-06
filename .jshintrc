@@ -4,6 +4,7 @@
   "curly": false,  /* custom */
   "eqeqeq": true,
   "forin": true,
+  "esnext": true,
   "freeze": true,
   "immed": true,
   "indent": 1,  /* custom */
