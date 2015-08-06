@@ -67,5 +67,9 @@ module.exports = {
       'gulpfile.js',
       'keystone.js'
     ]
-  }
+  },
+  img: {
+    src: 'public/img/**/*',
+    dest: 'dist/img'
+  },
 };

@@ -1,7 +1,5 @@
 $(function() {
 
-  new WOW({delay: 2000}).init();
-
   $(window).load(function() {
     $("#preloader").delay(500).fadeOut();
     $(".preloader").delay(600).fadeOut("slow");

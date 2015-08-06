@@ -5,6 +5,9 @@ module.exports = {
   browserSync: {
     proxy: 'localhost:3000'
   },
+  imagemin: {
+    progressive: true
+  },
   autoprefixer: {
     browsers: [
       '> 1%',

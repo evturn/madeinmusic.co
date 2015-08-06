@@ -79,6 +79,12 @@ gulp.task('lint', function() {
     .pipe($.notify(options.notify.jshint));
 });
 
+gulp.task('img', function() {
+  return gulp.src(paths.img.src)
+  .pipe($.imagemin(options.imagemin))
+  .pipe(gulp.dest(paths.img.dest));
+});
+
 gulp.task('reloader', ['less', 'js'], function() {
   browserSync.reload();
 });
