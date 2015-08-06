@@ -1561,27 +1561,6 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -6250,8 +6229,6 @@ button.close {
 .clearfix:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
-.container:before,
-.container:after,
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
@@ -6281,7 +6258,6 @@ button.close {
 }
 .clearfix:after,
 .dl-horizontal dd:after,
-.container:after,
 .container-fluid:after,
 .row:after,
 .form-horizontal .form-group:after,
@@ -6300,8 +6276,6 @@ button.close {
 .clearfix:after,
 .dl-horizontal dd:before,
 .dl-horizontal dd:after,
-.container:before,
-.container:after,
 .container-fluid:before,
 .container-fluid:after,
 .row:before,
@@ -6331,7 +6305,6 @@ button.close {
 }
 .clearfix:after,
 .dl-horizontal dd:after,
-.container:after,
 .container-fluid:after,
 .row:after,
 .form-horizontal .form-group:after,
@@ -6594,9 +6567,9 @@ button.close {
 }
 #footer {
   margin-top: 30px;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #f1f1f1;
   padding-top: 30px;
-  color: #777777;
+  color: #bfbfbf;
 }
 .gallery-image img {
   display: block;
@@ -8451,6 +8424,24 @@ button.close {
   font-weight: 300;
   font-family: 'Raleway', sans-serif;
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 1200px;
+}
+@media (max-width: 600px) {
+  .gutter {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .hidden {
   display: none;
 }
@@ -8538,13 +8529,35 @@ h6 {
   font-family: "Raleway";
   font-size: 20px;
 }
+#body {
+  min-height: 70vh;
+}
 .landing {
   margin-top: 40px;
   margin-bottom: 40px;
+  background-color: #cfe7f0;
+  overflow: auto;
 }
-.landing .landing-content .landing-text {
-  font-family: "Dosis";
+.landing .text-container {
+  float: right;
+  width: 50%;
+}
+.landing .image-container {
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+.landing .image-container .img-scale {
+  display: inline-block;
+  max-width: 400px;
+}
+.landing .subhead {
+  font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
+  font-size: 24px;
+}
+.landing .meta {
+  font-size: 18px;
 }
 @media (min-width: 800px) {
   .landing .landing-content .landing-text {

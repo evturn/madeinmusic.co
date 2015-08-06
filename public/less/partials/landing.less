@@ -1,15 +1,45 @@
+#body {
+  min-height: 70vh;
+}
+
 .landing {
   margin-top: 40px;
   margin-bottom: 40px;
+  background-color: @standard;
+  overflow: auto;
+
+
+  .text-container {
+    float: right;
+    width: 50%
+
+  }
+
+  .image-container {
+    float: left;
+    width: 40%;
+    text-align: left;
+
+    .img-scale {
+      display: inline-block;
+      max-width: 400px;
+    }
+  }
+
+  .subhead {
+    font-family: @sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+
+  .meta {
+    font-size: 18px;
+  }
 }
 
 .landing .landing-content {
 }
 
-.landing .landing-content .landing-text {
-  font-family: "Dosis";
-  text-transform: uppercase;
-}
 
 @media (min-width: @md) {
 
