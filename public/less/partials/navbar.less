@@ -1,75 +1,24 @@
-.navbar-default {
-  background: @white;
-  height: 50px;
-  width: 100%;
-  overflow: auto;
-  border: none;
-}
-
 .navbar {
-  border: none;
-}
-
-.navbar-default .container-fluid .navbar-collapse a {
-  margin-right: 5px;
-}
-
-.navbar-default .navbar-nav > .active > a {
-  background-color: @standard;
-  color: @standard-dark;
-
-}
-
-.navbar-default .container-fluid .navbar-header {
-  height: 50px;
-}
-
-.navbar-default .container-fluid .navbar-header .img-nav {
-  padding-top: 5px;
-  width: 40px;
-}
-
-.navbar-default .container-fluid .navbar-header .navbar-toggle {
-  padding: 0;
-  padding-right: 15px;
-  margin: 0;
-  height: 50px;
-  border: none;
-  background: none;
-}
-
-.navbar-default .container-fluid .navbar-nav {
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 19px;
-  font-family: "Raleway";
-  color: #40768c;
-}
-
-.navbar-default .container-fluid .navbar-nav .navbar-right {
   background: @white;
-}
+  height: 50px;
+  font-family: @sans;
+  position: relative;
 
-.navbar-default .container-fluid .navbar-collapse {
-  text-transform: uppercase;
-  background: @white;
-}
+  ul {
+    margin-top: 10px;
+    float: right;
+  }
 
-.navbar-default .container-fluid .navbar-collapse p {
-  font-size: 19px;
-  margin-bottom: 0;
-}
+  li {
+    font-size: 16px;
+    margin-right: 10px;
+    display: inline-block;
+    text-transform: uppercase;
 
-.navbar-default .container-fluid .navbar-collapse a {
-  padding: 15px;
-}
-
-.navbar-default .container-fluid .navbar-collapse .nav.navbar-nav {
-  margin: 0;
-  text-align: right;
-}
-
-.navbar-default .container-fluid .navbar-collapse li:hover a {
-  color: #dd4438;
-  outline: none;
+    a {
+      color: @standard-dark;
+      vertical-align: -webkit-baseline-middle;
+      text-decoration: none;
+    }
+  }
 }

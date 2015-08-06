@@ -1,19 +1,11 @@
-<nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="fa fa-bars fa-3x"></span>
-      </button>
-    </div>
-    <div class="navbar-collapse collapse" id="collapse">
-      <ul class="nav navbar-nav navbar-right">
-        {{# each navLinks}}
-        <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-          <a href="{{ href }}">{{ label }}</a>
-        </li>
-        {{/each}}
-      </ul>
-    </div>
+<nav class="container navbar">
+  <div class="wrapper">
+    <ul class="navbar-links">
+      {{# each navLinks}}
+      <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+        <a href="{{ href }}">{{ label }}</a>
+      </li>
+      {{/each}}
+    </ul>
   </div>
 </nav>
