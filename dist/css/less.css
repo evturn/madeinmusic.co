@@ -1867,6 +1867,9 @@
     padding-right: 15px;
   }
 }
+#body {
+  min-height: 70vh;
+}
 .hidden {
   display: none;
 }
@@ -2026,26 +2029,11 @@ h6 {
   margin-top: 40px;
   margin-bottom: 40px;
 }
-#body {
-  min-height: 70vh;
-}
 .landing {
   margin-top: 40px;
   margin-bottom: 40px;
   background-color: #cfe7f0;
   overflow: auto;
-}
-.landing .text-container {
-  float: right;
-  width: 50%;
-}
-.landing .subhead {
-  font-family: 'Dosis', sans-serif;
-  text-transform: uppercase;
-  font-size: 24px;
-}
-.landing .meta {
-  font-size: 18px;
 }
 .landing .image-container {
   display: block;
@@ -2073,9 +2061,27 @@ h6 {
   }
 }
 .landing .btn-container {
+  margin-top: 20px;
   display: block;
   width: 100%;
   text-align: center;
+}
+.landing .btn-container .subhead {
+  font-size: 16px;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+}
+.landing .btn-container button {
+  margin-top: 20px;
+}
+@media (min-width: 600px) {
+  .landing .description-container {
+    float: right;
+    width: 50%;
+  }
+}
+.landing .description-container .meta {
+  font-size: 18px;
 }
 .blog {
   margin-top: 40px;
