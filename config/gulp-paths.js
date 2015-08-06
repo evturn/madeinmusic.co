@@ -17,5 +17,27 @@ module.exports = {
       filename: 'vendor.css',
       min: 'vendor.min.css'
     }
-  }
+  },
+
+    js: {
+    src: [
+      'public/js/**/*.js',
+      '!public/js/vendor/**/*.js'
+    ],
+    watch: [
+      'public/js/**/*.js',
+      '!public/js/vendor/**/*.js'
+    ],
+    dest: 'dist/js',
+    filename: 'scripts.js',
+    vendor: {
+      src: [
+        'public/js/vendor/jquery.min.js',
+        'public/js/vendor/bootstrap-3.3.4.js'
+      ],
+      dest: 'dist/js',
+      filename: 'vendor.js',
+      min: 'vendor.min.js'
+    }
+  },
 }
