@@ -6,6 +6,29 @@ var gulp = require('gulp'),
     options = require('./config/gulp-options');
 
 
+gulp.task('default', ['less', 'lint', 'watch', 'browsersync']);
+
+gulp.task('build', ['less', 'css', 'js', 'js:vendor', 'css:vendor']);
+
+gulp.task('watch', function() {
+  gulp.watch(paths.less.watch, ['less', 'reloader']);
+  gulp.watch(paths.jshint.watch, ['lint']);
+  gulp.watch(paths.js.watch, ['js', 'reloader']);
+});
+
+
+gulp.task('less', function() {
+  return gulp.src(paths.less.src)
+    .pipe($.plumber(options.plumber))
+    .pipe($.less())
+    .pipe($.rename(paths.less.filename))
+    .on('error', options.plumber.errorHandler)
+    .pipe($.autoprefixer(options.autoprefixer))
+    .pipe(gulp.dest(paths.less.dest))
+    .pipe($.cssmin())
+    .pipe($.rename(paths.less.min))
+    .pipe(gulp.dest(paths.less.dest)).on('error', gutil.log);
+});
 
 gulp.task('css', function() {
   return gulp.src(paths.css.src)

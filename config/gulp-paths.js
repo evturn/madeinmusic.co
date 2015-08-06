@@ -1,4 +1,13 @@
 module.exports = {
+
+  less: {
+    src: 'public/less/*.less',
+    watch: 'public/less/**/*.less',
+    dest: 'dist/css',
+    filename: 'less.css',
+    min: 'less.min.css'
+  },
+
   css: {
     src: [
       'public/css/reset.css'
@@ -12,17 +21,20 @@ module.exports = {
     min: 'style.min.css',
     vendor: {
       src: [
-        'public/css/vendor/animate.css'
+        'public/css/vendor/animate.css',
+        'public/css/vendor/et-line.css'
       ],
       filename: 'vendor.css',
       min: 'vendor.min.css'
     }
   },
 
-    js: {
+  js: {
     src: [
       'public/js/**/*.js',
-      '!public/js/vendor/**/*.js'
+      '!public/js/vendor/**/*.js',
+      '!public/js/bootstrap/**/*.js',
+      '!public/js/jquery/**/*.js'
     ],
     watch: [
       'public/js/**/*.js',
@@ -30,6 +42,7 @@ module.exports = {
     ],
     dest: 'dist/js',
     filename: 'scripts.js',
+    min: 'scripts.min.js',
     vendor: {
       src: [
         'public/js/vendor/jquery.min.js',

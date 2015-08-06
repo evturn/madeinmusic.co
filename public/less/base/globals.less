@@ -1,0 +1,33 @@
+.hidden          { display: none; }
+
+p                { -webkit-font-smoothing: antialiased; }
+a                { background: transparent; }
+
+.animate-long    { .animation-duration(0.6s); }
+.animate-short   { .animation-duration(0.2s); }
+.delay-long      { .animation-delay(0.6s); }
+.delay-short     { .animation-delay(0.3s); }
+
+// Prevents highlighting element background on click
+*,
+*:before,
+*:after {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.img-scale {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
