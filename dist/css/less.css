@@ -8528,32 +8528,6 @@ h6 {
   font-size: 16px;
 }
 /* line 13, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_page.scss */
-.section-title {
-  z-index: 2;
-  letter-spacing: 0.1em;
-  position: relative;
-  text-transform: uppercase;
-  margin-bottom: 90px;
-}
-/* line 19, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_page.scss */
-.section-title .font-backend {
-  bottom: -30px;
-  color: #ffffff;
-  font-family: "Cochin";
-  font-size: 120px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  z-index: -1;
-  height: 120px;
-  line-height: 120px;
-}
-/* line 31, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_page.scss */
-.section-title .lead {
-  font-size: 18px;
-  line-height: 2;
-  margin-top: 40px;
-}
 /* line 39, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_page.scss */
 /* line 89, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_page.scss */
 .form-control {
@@ -8568,52 +8542,43 @@ h6 {
   height: 100vh;
   margin-bottom: 100px;
 }
-/* line 4, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_landing.scss */
 .landing .landing-content {
   position: relative;
 }
-/* line 6, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_landing.scss */
 .landing .landing-content .landing-text {
   font-family: "Dosis";
   text-transform: uppercase;
   position: absolute;
 }
 @media (min-width: 768px) {
-  /* line 6, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_landing.scss */
   .landing .landing-content .landing-text {
     margin-top: 5%;
   }
 }
 @media (min-width: 992px) {
-  /* line 6, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_landing.scss */
   .landing .landing-content .landing-text {
     margin-top: 10%;
   }
 }
-/* line 16, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_landing.scss */
 .landing .landing-content .landing-text h1 {
   color: #40768c;
 }
-/* line 19, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_landing.scss */
 .landing .landing-content .landing-text h4 {
   line-height: 1.4em;
   color: #000;
   font-weight: normal;
 }
 @media (min-width: 320px) {
-  /* line 19, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_landing.scss */
   .landing .landing-content .landing-text h4 {
     font-size: 16px;
   }
 }
 @media (min-width: 480px) {
-  /* line 19, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_landing.scss */
   .landing .landing-content .landing-text h4 {
     font-size: 18px;
   }
 }
 @media (min-width: 768px) {
-  /* line 19, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_landing.scss */
   .landing .landing-content .landing-text h4 {
     font-size: 20px;
   }
@@ -8777,6 +8742,36 @@ h6 {
   text-transform: uppercase;
   color: #cfe7f0;
 }
+.title-container,
+.section-title {
+  z-index: 2;
+  letter-spacing: 0.1em;
+  position: relative;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+.title-container .font-backend,
+.section-title .font-backend {
+  bottom: -30px;
+  color: #ffffff;
+  font-family: "Cochin";
+  font-size: 120px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  height: 120px;
+  line-height: 120px;
+}
+.title-container .font-backend .lead,
+.section-title .font-backend .lead {
+  font-size: 18px;
+  line-height: 2;
+  margin-top: 40px;
+}
+.header {
+  font-size: 36px;
+}
 .btn-general {
   color: #ffffff;
   background: #dd4438;
@@ -8840,7 +8835,6 @@ h6 {
   position: fixed;
   display: block;
 }
-/* line 22, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_footer.scss */
 .preloader {
   position: absolute;
   margin: 0 auto;
@@ -8853,7 +8847,6 @@ h6 {
   background-size: 95px 95px;
   border-radius: 50%;
 }
-/* line 39, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_footer.scss */
 #spinner {
   position: relative;
   height: 95px;
@@ -8866,7 +8859,6 @@ h6 {
   -moz-animation: rotation 0.75s infinite linear;
   animation: rotation 0.75s infinite linear;
 }
-/* line 53, /Users/evanturner/src/projects/music-insider/public/assets/css/scss/partials/app/_footer.scss */
 #spinner:before {
   content: "";
   display: block;
