@@ -1,33 +1,35 @@
-<div class="container">
+<div class="container blog">
   <div class="wrapper">
 
     <div class="title-container">
       <p class="header"><span class="font-backend">B</span> Blog</p>
     </div>
 
-    <div class="stats-container">
-      <p class="meta">Showing {{ data.posts.results.length}} post.</p>
-    </div>
-
-    <div class="blog-container">
-      {{# each data.posts.results}}
-
-      <div class="post episode-info" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
-        <p class="subhead"><a href="{{postUrl slug}}">{{{title}}}</a></p>
-        <p class="caption">{{{categoryList categories prefix="Posted in "}}}
-            {{#if author.name.first}}by {{author.name.first}}{{/if}}
-        </p>
-        <p class="meta">{{{content.extended}}}</p>
-        <p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>
+    <div class="blog-items">
+      <div class="stats-container">
+        <p class="meta">Showing {{ data.posts.results.length}} post.</p>
       </div>
 
-      {{/each}}
+      <div class="blog-container">
+        {{# each data.posts.results}}
+
+        <div class="blog-item" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
+          <p class="subhead"><a href="{{postUrl slug}}">{{{title}}}</a></p>
+          <p class="caption">{{{categoryList categories prefix="Posted in "}}}
+              {{#if author.name.first}}by {{author.name.first}}{{/if}}
+          </p>
+          <p class="meta">{{{content.extended}}}</p>
+          <p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>
+        </div>
+
+        {{/each}}
+      </div>
     </div>
 
-    <div class="categories-container">
+    <div class="categories">
       <div class="categories-header">
         <p class="subhead">Categories</p>
-        <p class="header"><a href="/blog" class="active list-group-item">All Categories</a></p>
+        <p class="meta"><a href="/blog" class="active list-group-item">All Categories</a></p>
       </div>
       {{# each data.categories }}
 

@@ -11,9 +11,9 @@ gulp.task('default', ['less', 'lint', 'watch', 'browsersync']);
 gulp.task('build', ['less', 'css', 'js', 'js:vendor', 'css:vendor']);
 
 gulp.task('watch', function() {
-  gulp.watch(paths.less.watch, ['less', 'reloader']);
+  gulp.watch(paths.less.watch, ['reloader']);
   gulp.watch(paths.jshint.watch, ['lint']);
-  gulp.watch(paths.js.watch, ['js', 'reloader']);
+  gulp.watch(paths.js.watch, ['reloader']);
 });
 
 
@@ -85,7 +85,7 @@ gulp.task('img', function() {
   .pipe(gulp.dest(paths.img.dest));
 });
 
-gulp.task('reloader', ['less', 'js'], function() {
+gulp.task('reloader', ['less'], function() {
   browserSync.reload();
 });
 
