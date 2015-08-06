@@ -2173,19 +2173,38 @@ h6 {
   text-decoration: none;
 }
 .categories {
-  width: 24%;
-  display: inline-block;
   vertical-align: top;
-  text-align: right;
+  width: 100%;
+  display: block;
+}
+@media (min-width: 600px) {
+  .categories {
+    width: 24%;
+    display: inline-block;
+    text-align: right;
+  }
 }
 .categories .subhead {
-  font-size: 22px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+@media (min-width: 600px) {
+  .categories .subhead {
+    font-size: 22px;
+  }
 }
 .categories .meta,
 .categories .meta .btn-red {
-  margin-top: 5px;
-  font-size: 16px;
-  height: 30px;
+  font-size: 15px;
+  height: 25px;
+}
+@media (min-width: 600px) {
+  .categories .meta,
+  .categories .meta .btn-red {
+    margin-top: 5px;
+    font-size: 16px;
+    height: 30px;
+  }
 }
 .categories .meta a,
 .categories .meta .btn-red a {

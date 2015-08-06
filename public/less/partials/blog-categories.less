@@ -1,18 +1,33 @@
 .categories {
+  vertical-align: top;
+  width: 100%;
+  display: block;
+
+  @media (min-width: @sm) {
   width: 24%;
   display: inline-block;
-  vertical-align: top;
   text-align: right;
+  }
 
   .subhead {
-    font-size: 22px;
+    font-size: 16px;
+    margin-bottom: 5px;
+
+    @media (min-width: @sm) {
+      font-size: 22px;
+    }
   }
 
   .meta,
   .meta .btn-red {
-    margin-top: 5px;
-    font-size: 16px;
-    height: 30px;
+    font-size: 15px;
+    height: 25px;
+
+    @media (min-width: @sm) {
+      margin-top: 5px;
+      font-size: 16px;
+      height: 30px;
+    }
 
     a {
       text-decoration: none;
