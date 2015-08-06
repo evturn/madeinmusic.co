@@ -1956,25 +1956,45 @@ h6 {
   font-size: 20px;
 }
 .navbar {
-  background: #ffffff;
-  height: 50px;
+  background: transparent;
   font-family: 'Raleway', sans-serif;
   position: relative;
+  height: 50px;
+}
+@media (min-width: 600px) {
+  .navbar {
+    background: #ffffff;
+  }
 }
 .navbar ul {
-  margin-top: 10px;
-  float: right;
+  margin-top: 20px;
+  float: none;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .navbar ul {
+    margin-top: 10px;
+    float: right;
+  }
 }
 .navbar li {
-  font-size: 16px;
-  margin-right: 10px;
-  display: inline-block;
   text-transform: uppercase;
+  display: inline-block;
+  margin-right: 10px;
+}
+.navbar li:nth-child(4) {
+  margin-right: 0;
+}
+@media (min-width: 600px) {
+  .navbar li {
+    font-size: 16px;
+  }
 }
 .navbar li a {
   color: #46758e;
   vertical-align: -webkit-baseline-middle;
   text-decoration: none;
+  font-size: 16px;
 }
 .footer {
   bottom: 0;
@@ -2030,7 +2050,8 @@ h6 {
   margin-bottom: 40px;
 }
 .landing {
-  margin-top: 80px;
+  height: 100vh;
+  margin-top: 40px;
   margin-bottom: 40px;
   background-color: #cfe7f0;
 }
@@ -2043,14 +2064,19 @@ h6 {
 }
 .landing .image-container .inner-text {
   position: absolute;
-  top: -25px;
-  left: 0;
+  top: 100px;
+  left: 0px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 .landing .image-container .subhead {
-  font-size: 18px;
+  margin-left: 35%;
+  text-align: left;
+  font-size: 14px;
   font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
+  font-weight: 500;
 }
 @media (min-width: 600px) {
   .landing .image-container {
@@ -2060,7 +2086,7 @@ h6 {
   }
 }
 .landing .image-container .img-scale {
-  width: 125px;
+  width: 90px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2071,13 +2097,19 @@ h6 {
   }
 }
 .landing .btn-container {
-  margin-top: 5px;
+  margin-top: 40px;
   display: block;
   width: 100%;
   text-align: center;
 }
 .landing .btn-container button {
-  margin-top: 20px;
+  width: 125px;
+}
+.landing .description-container {
+  margin-top: 40px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 600px) {
   .landing .description-container {
@@ -2086,7 +2118,8 @@ h6 {
   }
 }
 .landing .description-container .meta {
-  font-size: 18px;
+  line-height: 1.7em;
+  font-size: 22px;
 }
 .blog {
   margin-top: 40px;
