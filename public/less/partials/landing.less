@@ -1,39 +1,57 @@
 .landing {
-  height: 100vh;
-  margin-bottom: 100px; }
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
-  .landing .landing-content {
-    position: relative; }
+.landing .landing-content {
+}
 
-    .landing .landing-content .landing-text {
-      font-family: "Dosis";
-      text-transform: uppercase;
-      position: absolute; }
-      @media (min-width: 768px) {
+.landing .landing-content .landing-text {
+  font-family: "Dosis";
+  text-transform: uppercase;
+}
 
-        .landing .landing-content .landing-text {
-          margin-top: 5%; } }
-      @media (min-width: 992px) {
+@media (min-width: @md) {
 
-        .landing .landing-content .landing-text {
-          margin-top: 10%; } }
+  .landing .landing-content .landing-text {
+    margin-top: 5%;
+  }
+}
 
-      .landing .landing-content .landing-text h1 {
-        color: #40768c; }
+@media (min-width: @lg) {
 
-      .landing .landing-content .landing-text h4 {
-        line-height: 1.4em;
-        color: #000;
-        font-weight: normal; }
-        @media (min-width: 320px) {
+  .landing .landing-content .landing-text {
+    margin-top: 10%;
+  }
+}
 
-          .landing .landing-content .landing-text h4 {
-            font-size: 16px; } }
-        @media (min-width: 480px) {
+.landing .landing-content .landing-text h1 {
+  color: #40768c;
+}
 
-          .landing .landing-content .landing-text h4 {
-            font-size: 18px; } }
-        @media (min-width: 768px) {
+.landing .landing-content .landing-text h4 {
+  line-height: 1.4em;
+  color: @black;
+  font-weight: normal;
+}
 
-          .landing .landing-content .landing-text h4 {
-            font-size: 20px; } }
+@media (min-width: @xs) {
+
+  .landing .landing-content .landing-text h4 {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: @sm) {
+
+  .landing .landing-content .landing-text h4 {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @md) {
+
+  .landing .landing-content .landing-text h4 {
+    font-size: 20px;
+  }
+}
