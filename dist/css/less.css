@@ -2030,10 +2030,9 @@ h6 {
   margin-bottom: 40px;
 }
 .landing {
-  margin-top: 40px;
+  margin-top: 80px;
   margin-bottom: 40px;
   background-color: #cfe7f0;
-  overflow: auto;
 }
 .landing .image-container {
   display: block;
@@ -2041,6 +2040,17 @@ h6 {
   margin-left: auto;
   width: 100%;
   text-align: center;
+}
+.landing .image-container .inner-text {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 100%;
+}
+.landing .image-container .subhead {
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
 }
 @media (min-width: 600px) {
   .landing .image-container {
@@ -2050,7 +2060,7 @@ h6 {
   }
 }
 .landing .image-container .img-scale {
-  width: 100px;
+  width: 125px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2061,15 +2071,10 @@ h6 {
   }
 }
 .landing .btn-container {
-  margin-top: 20px;
+  margin-top: 5px;
   display: block;
   width: 100%;
   text-align: center;
-}
-.landing .btn-container .subhead {
-  font-size: 16px;
-  font-family: 'Dosis', sans-serif;
-  text-transform: uppercase;
 }
 .landing .btn-container button {
   margin-top: 20px;
