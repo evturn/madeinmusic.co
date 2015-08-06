@@ -8703,6 +8703,11 @@ h6 {
   display: inline-block;
   margin-top: 20px;
 }
+.blog-item {
+  padding: 15px;
+  background-color: #ffffff;
+  margin-bottom: 15px;
+}
 .blog-item .subhead {
   font-size: 24px;
 }
