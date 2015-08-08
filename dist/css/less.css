@@ -2065,7 +2065,7 @@ h6 {
 }
 @media (min-width: 375px) {
   .landing .image-container .inner-text {
-    top: 66px;
+    top: 44px;
   }
 }
 .landing .image-container .subhead {
@@ -2074,10 +2074,11 @@ h6 {
   font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
+  text-shadow: 14px 10px 4px #cfe7f0, 1px 2px 1px #FFF;
 }
 @media (min-width: 375px) {
   .landing .image-container .subhead {
-    font-size: 40px;
+    font-size: 33px;
   }
 }
 @media (min-width: 600px) {
