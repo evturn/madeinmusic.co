@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     options = require('./config/gulp-options');
 
 
-gulp.task('default', ['nodemon', 'less', 'lint', 'watch'], function() {
+gulp.task('default', ['watch', 'nodemon', 'lint'], function() {
   browserSync.init(options.browserSync);
 });
 
@@ -88,7 +88,22 @@ gulp.task('img', function() {
   .pipe(gulp.dest(paths.img.dest));
 });
 
-gulp.task('reloader', ['js', 'less'], function() {
+gulp.task('babel', function () {
+  return gulp.src(paths.js.src)
+    .pipe($.plumber(options.plumber))
+    .pipe($.sourcemaps.init())
+    .pipe($.babel())
+    .on('error', options.plumber.errorHandler)
+    .pipe($.concat(paths.babel.filename))
+    .pipe(gulp.dest(paths.js.dest))
+    .pipe($.uglify(paths.js.src))
+    .pipe($.rename(paths.babel.min))
+    .pipe(gulp.dest(paths.js.dest))
+    .pipe($.sourcemaps.write('.'))
+    .on('error', gutil.log);
+});
+
+gulp.task('reloader', ['babel', 'less'], function() {
   browserSync.reload();
 });
 

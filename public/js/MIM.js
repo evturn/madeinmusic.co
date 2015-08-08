@@ -1,10 +1,10 @@
-var MIM = {
+const MIM = {
 
-  init: function() {
+  init() {
     MIM.makeFullHeight();
   },
 
-  makeFullHeight: function() {
+  makeFullHeight() {
     var $landing = $('.landing');
     var $navbar = $('.navbar');
     var windowHeight = $(window).height();
@@ -13,7 +13,7 @@ var MIM = {
     var padding = windowHeight - (landingHeight + navbarHeight);
 
     $landing.css({'paddingBottom': padding});
-  },
+  }
 
 };
 

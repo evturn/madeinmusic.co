@@ -1,44 +1,47 @@
-const MIM = {
+'use strict';
 
-  init() {
+var MIM = {
+
+  init: function init() {
     MIM.makeFullHeight();
   },
 
-  makeFullHeight() {
+  makeFullHeight: function makeFullHeight() {
     var $landing = $('.landing');
     var $navbar = $('.navbar');
     var windowHeight = $(window).height();
     var landingHeight = $landing.outerHeight(true);
     var navbarHeight = $navbar.outerHeight(true);
     var padding = windowHeight - (landingHeight + navbarHeight);
-    console.log('fuck');
-    $landing.css({'paddingBottom': padding});
+
+    $landing.css({ 'paddingBottom': padding });
   }
 
 };
 
-$(document).on('ready', function() {
+$(document).on('ready', function () {
   MIM.init();
 });
-$(function() {
+"use strict";
 
-  $(window).load(function() {
+$(function () {
+
+  $(window).load(function () {
     $("#preloader").delay(500).fadeOut();
     $(".preloader").delay(600).fadeOut("slow");
   });
 
-  $(window).scroll(function(){
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 1) {
-        $('.dmtop').css({bottom:"25px"});
+      $('.dmtop').css({ bottom: "25px" });
     } else {
-        $('.dmtop').css({bottom:"-100px"});
+      $('.dmtop').css({ bottom: "-100px" });
     }
   });
-  $('.dmtop').click(function(){
-      $('html, body').animate({scrollTop: '0px'}, 800);
-      return false;
+  $('.dmtop').click(function () {
+    $('html, body').animate({ scrollTop: '0px' }, 800);
+    return false;
   });
 
   $('[data-toggle="tooltip"]').tooltip();
-
 });

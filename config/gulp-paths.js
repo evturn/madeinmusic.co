@@ -1,7 +1,15 @@
 module.exports = {
+
+  babel: {
+    filename: 'es6.js',
+    min: 'es6.min.js',
+    dest: 'dist/js'
+  },
+
   views: {
     src: 'templates/**/*.hbs'
   },
+
   less: {
     src: 'public/less/*.less',
     watch: 'public/less/**/*.less',
