@@ -16,6 +16,7 @@ gulp.task('watch', function() {
   gulp.watch(paths.less.watch, ['reloader']);
   gulp.watch(paths.jshint.watch, ['lint']);
   gulp.watch(paths.js.watch, ['reloader']);
+  gulp.watch(paths.views.src, ['reloader']);
 });
 
 

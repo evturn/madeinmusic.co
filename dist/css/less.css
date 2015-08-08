@@ -1960,7 +1960,6 @@ h6 {
   font-family: 'Raleway', sans-serif;
   position: relative;
   height: 50px;
-  color: #000000;
 }
 @media (min-width: 600px) {
   .navbar {
@@ -1992,10 +1991,15 @@ h6 {
   }
 }
 .navbar li a {
-  color: #46758e;
+  color: #000000;
   vertical-align: -webkit-baseline-middle;
   text-decoration: none;
   font-size: 16px;
+}
+@media (min-width: 600px) {
+  .navbar li a {
+    color: #46758e;
+  }
 }
 .footer {
   bottom: 0;

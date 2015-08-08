@@ -1,5 +1,7 @@
 module.exports = {
-
+  views: {
+    src: '*.hbs'
+  },
   less: {
     src: 'public/less/*.less',
     watch: 'public/less/**/*.less',
