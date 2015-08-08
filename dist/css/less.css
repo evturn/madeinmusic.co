@@ -1997,6 +1997,11 @@ h6 {
   text-decoration: none;
   font-size: 16px;
 }
+@media (min-width: 375px) {
+  .navbar li a {
+    font-size: 20px;
+  }
+}
 @media (min-width: 600px) {
   .navbar li a {
     color: #46758e;
