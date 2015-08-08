@@ -3,10 +3,14 @@
   width: 100%;
   display: block;
 
+  .categories-header {
+    text-align: left;
+  }
+
   @media (min-width: @sm) {
-  width: 24%;
-  display: inline-block;
-  text-align: right;
+    width: 24%;
+    display: inline-block;
+    text-align: right;
   }
 
   .subhead {
@@ -18,15 +22,11 @@
     }
   }
 
-  .meta,
-  .meta .btn-red {
-    font-size: 15px;
-    height: 25px;
+  .meta {
+    font-size: 14px;
 
     @media (min-width: @sm) {
-      margin-top: 5px;
       font-size: 16px;
-      height: 30px;
     }
 
     a {

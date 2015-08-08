@@ -2196,6 +2196,9 @@ h6 {
   width: 100%;
   display: block;
 }
+.categories .categories-header {
+  text-align: left;
+}
 @media (min-width: 600px) {
   .categories {
     width: 24%;
@@ -2212,21 +2215,15 @@ h6 {
     font-size: 22px;
   }
 }
-.categories .meta,
-.categories .meta .btn-red {
-  font-size: 15px;
-  height: 25px;
+.categories .meta {
+  font-size: 14px;
 }
 @media (min-width: 600px) {
-  .categories .meta,
-  .categories .meta .btn-red {
-    margin-top: 5px;
+  .categories .meta {
     font-size: 16px;
-    height: 30px;
   }
 }
-.categories .meta a,
-.categories .meta .btn-red a {
+.categories .meta a {
   text-decoration: none;
 }
 .pagination {
