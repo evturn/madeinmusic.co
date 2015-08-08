@@ -2229,6 +2229,34 @@ h6 {
 .categories .meta .btn-red a {
   text-decoration: none;
 }
+.pagination {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 28px;
+}
+.pagination ul {
+  width: 100%;
+}
+.pagination li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.pagination li.active a {
+  font-size: 2em;
+  color: #46758e;
+}
+.pagination li.disabled a {
+  color: #bfbfbf;
+}
+.pagination li a .fa {
+  vertical-align: bottom;
+  font-size: 1.5em;
+}
+.pagination a {
+  color: #000000;
+  text-decoration: none;
+}
 .title-container,
 .section-title {
   z-index: 2;
