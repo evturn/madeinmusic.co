@@ -6,7 +6,9 @@ var gulp = require('gulp'),
     options = require('./config/gulp-options');
 
 
-gulp.task('default', ['less', 'lint', 'watch', 'browsersync']);
+gulp.task('default', ['nodemon', 'less', 'lint', 'watch'], function() {
+  browserSync.init(options.browserSync);
+});
 
 gulp.task('build', ['less', 'css', 'js', 'js:vendor', 'css:vendor']);
 
@@ -87,6 +89,10 @@ gulp.task('img', function() {
 
 gulp.task('reloader', ['less'], function() {
   browserSync.reload();
+});
+
+gulp.task('nodemon', function() {
+  $.nodemon(options.nodemon);
 });
 
 gulp.task('browsersync', function() {

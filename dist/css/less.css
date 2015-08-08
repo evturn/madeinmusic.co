@@ -1960,6 +1960,7 @@ h6 {
   font-family: 'Raleway', sans-serif;
   position: relative;
   height: 50px;
+  color: #000000;
 }
 @media (min-width: 600px) {
   .navbar {

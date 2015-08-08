@@ -2,8 +2,13 @@ var gutil = require('gulp-util'),
     $ = require('gulp-load-plugins')();
 
 module.exports = {
+  nodemon: {
+    script: 'keystone.js',
+    ignore: '*'
+  },
   browserSync: {
-    proxy: 'localhost:3000'
+    proxy: 'localhost:3000',
+    port: 3001
   },
   imagemin: {
     progressive: true
