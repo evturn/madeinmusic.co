@@ -2,19 +2,22 @@
   <div class="wrapper">
 
 
-        <p class="navigate-link"><a href="/blog"><i class="fa fa-arrow-left"></i> back to the blog</a></p>
-        <hr>
+    <p class="navigate-link"><a href="/blog"><i class="fa fa-long-arrow-left"></i> back to the blog</a></p>
+    <hr>
 
-          <h1>{{data.post.title}}</h1>
-          <h5>
-            {{{categoryList data.post.categories prefix="Posted in "}}}
-            {{#if author.name.first}}by {{author.name.first}}{{/if}}
-          </h5>
+    <div class="entry">
+      <div class="title-container">
+        <h1 class="text-header">{{data.post.title}}</h1>
+        <h5 class="meta">
+          {{{categoryList data.post.categories prefix="Posted in "}}}
+          {{#if author.name.first}}by {{author.name.first}}{{/if}}
+        </h5>
+      </div>
 
-        <div class="post">
-          {{{data.post.content.extended}}}
-        </div>
-
+      <div class="body-container">
+        {{{data.post.content.extended}}}
+      </div>
+    </div>
 
   </div>
 </div>

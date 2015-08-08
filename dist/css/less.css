@@ -2134,8 +2134,19 @@ h6 {
     font-size: 14px;
   }
 }
+.blog-detail .body-container {
+  margin-top: 15px;
+}
 .blog-detail .navigate-link a {
   text-decoration: none;
+}
+.blog-detail .meta {
+  font-size: 11px;
+}
+.blog-detail .text-header {
+  text-transform: none;
+  font-size: 28px;
+  line-height: 1.2em;
 }
 .blog-items {
   display: block;
