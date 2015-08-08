@@ -88,7 +88,7 @@ gulp.task('img', function() {
   .pipe(gulp.dest(paths.img.dest));
 });
 
-gulp.task('reloader', ['less'], function() {
+gulp.task('reloader', ['js', 'less'], function() {
   browserSync.reload();
 });
 

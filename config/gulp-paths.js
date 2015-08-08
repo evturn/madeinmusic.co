@@ -33,7 +33,8 @@ module.exports = {
 
   js: {
     src: [
-      'public/js/**/*.js',
+      'public/js/MIM.js',
+      'public/js/main.js',
       '!public/js/vendor/**/*.js',
       '!public/js/bootstrap/**/*.js',
       '!public/js/jquery/**/*.js'
