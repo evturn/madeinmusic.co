@@ -2063,12 +2063,22 @@ h6 {
   margin-right: auto;
   width: 100%;
 }
+@media (min-width: 375px) {
+  .landing .image-container .inner-text {
+    top: 66px;
+  }
+}
 .landing .image-container .subhead {
   color: #46758e;
   font-size: 23px;
   font-family: 'Dosis', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
+}
+@media (min-width: 375px) {
+  .landing .image-container .subhead {
+    font-size: 40px;
+  }
 }
 @media (min-width: 600px) {
   .landing .image-container {
@@ -2081,6 +2091,11 @@ h6 {
   width: 90px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-width: 375px) {
+  .landing .image-container .img-scale {
+    width: 150px;
+  }
 }
 @media (min-width: 600px) {
   .landing .image-container .img-scale {

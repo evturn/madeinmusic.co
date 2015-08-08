@@ -7,12 +7,12 @@ var MIM = {
   },
 
   makeFullHeight: function makeFullHeight() {
-    var $landing = $('.landing');
-    var $navbar = $('.navbar');
-    var windowHeight = $(window).height();
-    var landingHeight = $landing.outerHeight(true);
-    var navbarHeight = $navbar.outerHeight(true);
-    var padding = windowHeight - (landingHeight + navbarHeight);
+    var $landing = $('.landing'),
+        $navbar = $('.navbar'),
+        windowHeight = $(window).height(),
+        landingHeight = $landing.outerHeight(true),
+        navbarHeight = $navbar.outerHeight(true),
+        padding = windowHeight - (landingHeight + navbarHeight);
 
     $landing.css({ 'paddingBottom': padding });
   }
