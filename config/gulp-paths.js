@@ -1,6 +1,6 @@
 module.exports = {
   views: {
-    src: '*.hbs'
+    src: 'templates/**/*.hbs'
   },
   less: {
     src: 'public/less/*.less',
