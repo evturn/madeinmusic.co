@@ -1961,6 +1961,7 @@ h6 {
   font-family: 'Raleway', sans-serif;
   position: relative;
   height: 50px;
+  margin-top: 20px;
 }
 @media (min-width: 600px) {
   .navbar {
@@ -1968,7 +1969,6 @@ h6 {
   }
 }
 .navbar ul {
-  margin-top: 20px;
   float: none;
   text-align: center;
 }
@@ -2041,6 +2041,12 @@ h6 {
 }
 .landing {
   background-color: #cfe7f0;
+  margin-top: 20px;
+}
+@media (min-width: 375px) {
+  .landing {
+    margin-top: 50px;
+  }
 }
 .landing .image-container {
   display: block;
