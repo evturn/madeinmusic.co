@@ -1,10 +1,10 @@
 const MIM = {
 
   init() {
-    MIM.makeFullHeight();
+    MIM.makeLandingFullHeight();
   },
 
-  makeFullHeight() {
+  makeLandingFullHeight() {
     let $landing = $('.landing'),
         $navbar = $('.navbar'),
         windowHeight = $(window).height(),
@@ -13,7 +13,17 @@ const MIM = {
         padding = windowHeight - (landingHeight + navbarHeight);
 
     $landing.css({'paddingBottom': padding});
-  }
+  },
+
+  preloader: function() {
+    $(window).load(function() {
+      let $container = $('#preloader'),
+          $image = $('.preloader');
+
+      $container.delay(500).fadeOut();
+      $image.delay(600).fadeOut('slow');
+    });
+  },
 
 };
 
