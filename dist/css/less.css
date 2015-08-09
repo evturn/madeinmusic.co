@@ -1924,10 +1924,10 @@ a {
 .navbar {
   background: transparent;
   font-family: 'Raleway', sans-serif;
-  position: relative;
 }
 @media (min-width: 600px) {
   .navbar {
+    overflow: auto;
     background: #ffffff;
   }
 }
@@ -1939,7 +1939,7 @@ a {
 }
 @media (min-width: 600px) {
   .navbar ul {
-    height: 50px;
+    width: 100%;
     float: right;
   }
 }
@@ -2050,9 +2050,9 @@ a {
 .landing {
   background-color: #cfe7f0;
 }
-@media (min-width: 375px) {
+@media (min-width: 600px) {
   .landing {
-    margin-top: 30px;
+    margin-top: 50px;
   }
 }
 .landing .image-container {

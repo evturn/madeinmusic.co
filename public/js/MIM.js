@@ -18,7 +18,7 @@ const MIM = {
         navbarHeight = $navbar.outerHeight(true),
         padding = windowHeight - (landingHeight + navbarHeight);
 
-    if (windowWidth > 400) {
+    if (windowWidth > 600) {
       return false
     }
 
