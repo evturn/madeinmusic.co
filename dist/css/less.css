@@ -2349,7 +2349,6 @@ a {
 @media (min-width: 600px) {
   .blog .stats-container {
     margin-top: 30px;
-    text-align: left;
   }
 }
 .blog .stats-container .meta {
@@ -2477,7 +2476,6 @@ a {
   .categories .categories-container {
     width: 80%;
     margin-left: auto;
-    margin-right: auto;
   }
 }
 .categories .category-item {
