@@ -2,9 +2,23 @@
   <div class="wrapper">
     <ul class="navbar-links">
       {{# each navLinks}}
+
       <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-        <a href="{{ href }}">{{ label }}</a>
+
+        {{#ifeq ../section 'home'}}
+          {{! If URL is matches 'home'}}
+          {{#ifeq key 'home'}}
+            {{! Do not render home in navbar}}
+          {{else}}
+            <a href="{{ href }}">{{ label }}</a>
+          {{/ifeq}}
+
+        {{else}}
+            {{! Any URL other than 'home' then render all navLinks}}
+          <a href="{{ href }}">{{ label }}</a>
+        {{/ifeq}}
       </li>
+
       {{/each}}
     </ul>
   </div>
