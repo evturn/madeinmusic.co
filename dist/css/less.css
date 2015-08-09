@@ -2478,10 +2478,22 @@ a {
 }
 .categories .meta {
   font-size: 14px;
+  color: #cfe7f0;
 }
 @media (min-width: 600px) {
   .categories .meta {
     font-size: 16px;
+  }
+}
+.categories .meta.active a {
+  font-size: 16px;
+  color: #dd4438;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+}
+@media (min-width: 600px) {
+  .categories .meta.active a {
+    font-size: 18px;
   }
 }
 .pagination {
