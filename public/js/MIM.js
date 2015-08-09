@@ -17,7 +17,8 @@ const MIM = {
         navbarHeight = $navbar.outerHeight(true),
         padding = windowHeight - (landingHeight + navbarHeight);
 
-    $btnContainer.css({'paddingBottom': padding});
+    $btnContainer.css({'paddingTop': padding / 4})
+                 .css({'paddingBottom': padding / 2});
   },
 
   triggerPreloader() {
