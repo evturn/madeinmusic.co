@@ -2011,6 +2011,9 @@ h6 {
   padding: 20px 15px;
   background-color: #ffffff;
 }
+.about .subsection {
+  padding-top: 15px;
+}
 .about .title-container {
   padding-top: 30px;
   text-align: center;
@@ -2031,7 +2034,8 @@ h6 {
   color: #46758e;
 }
 .about .meta {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1.4em;
 }
 .landing {
   background-color: #cfe7f0;
