@@ -35,4 +35,4 @@ node_modules
 # Ignore .DS_Store files on OS X
 .DS_Store
 
-!node_modules/keystone/admin/public/styles/theme/*.less
+!node_modules/keystone/admin/public/styles/theme/*
