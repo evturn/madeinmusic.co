@@ -36,14 +36,14 @@
               <p class="subhead">Categories</p>
             </div>
             <div class="category-item">
-              <p class="meta"><a href="/blog" class="active">All Categories</a></p>
+              <p class="meta"><a href="/blog">All Categories</a></p>
             </div>
-
             {{# each data.categories }}
 
             <div class="category-item">
-              <a href="{{categoryUrl key}}" class="false" type="button">{{name}}</a>
+              <p class="meta{{#ifeq ../filters.category key}} active{{else}}{{/ifeq}}"><a href="{{categoryUrl key}}">{{name}}</a></p>
             </div>
+
 
             {{/each}}
           </div>

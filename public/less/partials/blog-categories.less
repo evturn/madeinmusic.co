@@ -24,20 +24,26 @@
 
   .title-container {
     padding: initial;
+    text-transform: none;
+    margin-bottom: 10px;
   }
 
   .categories-container {
     text-align: left;
 
     @media(min-width: @sm) {
-    background-color: @white;
-    margin-left: 15px;
-    padding: 15px;
-    .box-shadow( 0px 0px 5px -1px rgba(0,0,0,0.4));
-    text-align: right;
+      background-color: @white;
+      margin-left: 15px;
+      padding: 15px;
+      .box-shadow( 0px 0px 5px -1px rgba(0,0,0,0.4));
+      text-align: right;
     }
   }
 
+
+  .category-item {
+    margin-bottom: 10px;
+  }
 
   .subhead {
     font-size: 16px;
