@@ -9,35 +9,47 @@
       <p class="meta">Showing {{ data.posts.results.length}} posts.</p>
     </div>
 
-    <div class="blog-items">
-      <div class="blog-container">
-        {{# each data.posts.results}}
+    <div class="group-desktop">
 
-        <div class="blog-item" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
-          <p class="subhead"><a href="{{postUrl slug}}">{{{title}}}</a></p>
-          <p class="caption">{{{categoryList categories prefix="Posted in "}}}
-              {{#if author.name.first}}by {{author.name.first}}{{/if}}
-          </p>
-          <p class="meta">{{{content.extended}}}</p>
-          <p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>
+      <div class="blog-items">
+        <div class="blog-container">
+          {{# each data.posts.results}}
+
+          <div class="blog-item" data-ks-editable="{{#if ../user}}{{adminEditableUrl ../../user _id}}{{/if}}">
+            <p class="subhead"><a href="{{postUrl slug}}">{{{title}}}</a></p>
+            <p class="caption">{{{categoryList categories prefix="Posted in "}}}
+                {{#if author.name.first}}by {{author.name.first}}{{/if}}
+            </p>
+            <p class="meta">{{{content.extended}}}</p>
+            <p class="read-more"><a href="{{postUrl slug}}">Read more...</a></p>
+          </div>
+
+          {{/each}}
         </div>
-
-        {{/each}}
-      </div>
-    </div>
-
-    <div class="categories">
-      <div class="categories-header">
-        <p class="subhead">Categories</p>
-        <p class="meta"><a href="/blog" class="active">All Categories</a></p>
-      </div>
-      {{# each data.categories }}
-
-      <div class="category-item">
-        <a href="{{categoryUrl key}}" class="false list-group-item" type="button">{{name}}</a>
       </div>
 
-      {{/each}}
+      <div class="categories">
+        <div class="inner">
+
+          <div class="categories-container">
+            <div class="title-container">
+              <p class="subhead">Categories</p>
+            </div>
+            <div class="category-item">
+              <p class="meta"><a href="/blog" class="active">All Categories</a></p>
+            </div>
+
+            {{# each data.categories }}
+
+            <div class="category-item">
+              <a href="{{categoryUrl key}}" class="false" type="button">{{name}}</a>
+            </div>
+
+            {{/each}}
+          </div>
+        </div>
+      </div>
+
     </div>
 
   {{>pagination}}
