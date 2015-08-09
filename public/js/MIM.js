@@ -26,10 +26,13 @@ const MIM = {
         windowWidth = $(window).width(),
         windowHeight = $(window).height(),
         navbarHeight = $navbar.outerHeight(true),
-        padding = MIM.height ? MIM.height : MIM.setInitialLanding();
+        landingHeight = MIM.height ? MIM.height : MIM.setInitialLanding(),
+        padding = windowHeight - (landingHeight + navbarHeight),
+        paddingTop = padding / 2,
+        paddingBottom = padding;
 
-    $btnContainer.css({'paddingTop': padding * 0.25})
-                 .css({'paddingBottom': padding * 0.75});
+    $btnContainer.css({'paddingTop': paddingTop})
+                 .css({'paddingBottom': paddingBottom});
 
   },
 
