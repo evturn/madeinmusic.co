@@ -1955,6 +1955,7 @@ a {
 }
 .navbar li:last-child {
   border-right: 0;
+  margin-right: 0;
 }
 @media (min-width: 600px) {
   .navbar li {
@@ -2131,6 +2132,9 @@ a {
   }
 }
 .landing .image-container .inner-text {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
   position: absolute;
   top: 38px;
   left: -4px;
@@ -2210,7 +2214,7 @@ a {
 .landing .btn-container.mobile {
   display: block;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .landing .btn-container.mobile {
     display: none;
   }
@@ -2218,7 +2222,7 @@ a {
 .landing .btn-container.desktop {
   display: none;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .landing .btn-container.desktop {
     display: block;
   }
@@ -2241,7 +2245,7 @@ a {
     width: 40%;
     margin-top: initial;
     padding: 0;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
   }
 }
 @media (min-width: 800px) {
