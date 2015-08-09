@@ -2379,9 +2379,14 @@ a {
 }
 @media (min-width: 600px) {
   .blog-items {
-    width: 75%;
+    width: 60%;
     display: inline-block;
     float: left;
+  }
+}
+@media (min-width: 800px) {
+  .blog-items {
+    width: 75%;
   }
 }
 .blog-item {
@@ -2425,10 +2430,15 @@ a {
 }
 @media (min-width: 600px) {
   .categories {
-    width: 25%;
+    width: 40%;
     float: right;
     display: inline-block;
     text-align: right;
+  }
+}
+@media (min-width: 800px) {
+  .categories {
+    width: 25%;
   }
 }
 @media (min-width: 600px) {
