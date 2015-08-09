@@ -2063,11 +2063,11 @@ h6 {
 }
 .landing {
   background-color: #cfe7f0;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 @media (min-width: 375px) {
   .landing {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 .landing .image-container {
