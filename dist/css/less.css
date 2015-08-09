@@ -2049,7 +2049,6 @@ a {
 }
 .contact .title-container {
   padding-top: 20px;
-  padding-bottom: 40px;
 }
 .contact .title-container .img-backend {
   top: 0;
@@ -2072,6 +2071,9 @@ a {
 .contact .form-container {
   width: 100%;
   overflow: hidden;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contact .input-container {
   margin-left: auto;
