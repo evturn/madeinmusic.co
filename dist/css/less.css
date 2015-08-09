@@ -2000,6 +2000,17 @@ a {
 .about .subsection {
   padding-top: 15px;
 }
+@media (min-width: 600px) {
+  .about .subsection {
+    width: 50%;
+    display: inline-block;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    vertical-align: top;
+  }
+}
 .about .title-container {
   padding-top: 30px;
   text-align: center;
@@ -2010,11 +2021,6 @@ a {
 .about .title-container .font-backend {
   color: #cfe7f0;
 }
-@media (min-width: 400px) {
-  .about .title-container {
-    text-align: left;
-  }
-}
 .about .info-container {
   margin-top: 30px;
   color: #46758e;
@@ -2022,6 +2028,18 @@ a {
 .about .meta {
   font-size: 20px;
   line-height: 1.4em;
+}
+@media (min-width: 600px) {
+  .about .meta {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 800px) {
+  .about .meta {
+    width: 60%;
+  }
 }
 .contact .title-container {
   padding-top: 20px;
