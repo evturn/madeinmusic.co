@@ -13,12 +13,13 @@ var MIM = {
   makeLandingFullHeight: function makeLandingFullHeight() {
     var $landing = $('.landing'),
         $navbar = $('.navbar'),
+        $btnContainer = $('.landing .btn-container'),
         windowHeight = $(window).height(),
         landingHeight = $landing.outerHeight(true),
         navbarHeight = $navbar.outerHeight(true),
         padding = windowHeight - (landingHeight + navbarHeight);
 
-    $landing.css({ 'paddingBottom': padding });
+    $btnContainer.css({ 'paddingBottom': padding });
   },
 
   triggerPreloader: function triggerPreloader() {
