@@ -10,6 +10,10 @@
     text-align: center;
   }
 
+  @media (min-width: @lg) {
+    height: 350px;
+  }
+
   .inner-text {
     .transition(0.3s);
     position: absolute;
@@ -26,6 +30,14 @@
     @media (min-width: @sm) {
       left: 60px;
       top: 60px;
+    }
+
+    @media (min-width: @mlarge) {
+      top: 75px;
+    }
+
+    @media (min-width: @lg) {
+      top: 80px;
     }
   }
 
@@ -48,7 +60,9 @@
     @media (min-width: @smedium) {
       font-size: 54px;
     }
-    @media (min-width: @md) {
+
+    @media (min-width: @lg) {
+      font-size: 80px;
     }
   }
 
@@ -74,8 +88,10 @@
       margin-right: auto;
       display: inline-block;
       width: inherit;
-      min-width: 150px;
-      max-width: 260px;
+    }
+
+    @media (min-width: @lg) {
+      width: 300px;
     }
   }
 }

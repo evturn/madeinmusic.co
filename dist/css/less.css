@@ -2116,6 +2116,8 @@ a {
 @media (min-width: 800px) {
   .landing .group-desktop {
     max-width: 1050px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
 .landing .image-container {
@@ -2129,6 +2131,11 @@ a {
 @media (min-width: 600px) {
   .landing .image-container {
     text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .landing .image-container {
+    height: 350px;
   }
 }
 .landing .image-container .inner-text {
@@ -2153,6 +2160,16 @@ a {
     top: 60px;
   }
 }
+@media (min-width: 1000px) {
+  .landing .image-container .inner-text {
+    top: 75px;
+  }
+}
+@media (min-width: 1200px) {
+  .landing .image-container .inner-text {
+    top: 80px;
+  }
+}
 .landing .image-container .subhead {
   color: #000000;
   font-family: 'Dosis', sans-serif;
@@ -2174,6 +2191,11 @@ a {
 @media (min-width: 700px) {
   .landing .image-container .subhead {
     font-size: 54px;
+  }
+}
+@media (min-width: 1200px) {
+  .landing .image-container .subhead {
+    font-size: 80px;
   }
 }
 @media (min-width: 600px) {
@@ -2203,8 +2225,11 @@ a {
     margin-right: auto;
     display: inline-block;
     width: inherit;
-    min-width: 150px;
-    max-width: 260px;
+  }
+}
+@media (min-width: 1200px) {
+  .landing .image-container .img-scale {
+    width: 300px;
   }
 }
 .landing .btn-container {
