@@ -2087,8 +2087,13 @@ a {
   margin-right: auto;
   margin-left: auto;
   width: 100%;
-  text-align: center;
+  text-align: left;
   position: relative;
+}
+@media (min-width: 600px) {
+  .landing .image-container {
+    text-align: center;
+  }
 }
 .landing .image-container .inner-text {
   position: absolute;
@@ -2111,15 +2116,15 @@ a {
 }
 .landing .image-container .subhead {
   color: #000000;
-  font-size: 23px;
   font-family: 'Dosis', sans-serif;
+  font-size: 48px;
   text-transform: uppercase;
   font-weight: 500;
   text-shadow: 14px 10px 4px #cfe7f0, 1px 2px 1px #FFF;
 }
 @media (min-width: 375px) {
   .landing .image-container .subhead {
-    font-size: 33px;
+    font-size: 55px;
   }
 }
 @media (min-width: 600px) {
@@ -2148,7 +2153,6 @@ a {
 .landing .image-container .img-scale {
   width: 125px;
   margin-left: auto;
-  margin-right: auto;
 }
 @media (min-width: 375px) {
   .landing .image-container .img-scale {
@@ -2157,6 +2161,7 @@ a {
 }
 @media (min-width: 600px) {
   .landing .image-container .img-scale {
+    margin-right: auto;
     display: inline-block;
     width: inherit;
     min-width: 150px;
