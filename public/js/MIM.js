@@ -2,6 +2,7 @@ const MIM = {
 
   init() {
     MIM.makeLandingFullHeight();
+    MIM.preloader();
   },
 
   makeLandingFullHeight() {
