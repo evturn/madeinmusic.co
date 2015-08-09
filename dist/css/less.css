@@ -2007,11 +2007,19 @@ h6 {
     color: #46758e;
   }
 }
+.about {
+  padding: 20px 15px;
+  background-color: #ffffff;
+}
 .about .title-container {
   padding-top: 30px;
-  margin-top: 40px;
-  margin-bottom: 40px;
   text-align: center;
+}
+.about .title-container .header {
+  text-shadow: none;
+}
+.about .title-container .font-backend {
+  color: #cfe7f0;
 }
 @media (min-width: 400px) {
   .about .title-container {
@@ -2019,7 +2027,8 @@ h6 {
   }
 }
 .about .info-container {
-  margin-top: 20px;
+  margin-top: 30px;
+  color: #46758e;
 }
 .about .meta {
   font-size: 18px;
