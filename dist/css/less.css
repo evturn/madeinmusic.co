@@ -2116,8 +2116,11 @@ a {
   width: 100%;
   text-align: center;
 }
-.landing .btn-container button {
-  width: 125px;
+.landing .btn-red {
+  cursor: pointer;
+  height: 70px;
+  text-decoration: none;
+  font-size: 22px;
 }
 .landing .description-container {
   margin-top: 40px;
