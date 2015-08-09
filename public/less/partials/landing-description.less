@@ -22,7 +22,11 @@
   }
   .meta {
     line-height: 1.7em;
-    font-size: 22px;
+    font-size: 18px;
+
+    @media (min-width: @iphone6) {
+      font-size: 22px;
+    }
 
     @media (min-width: @md) {
       max-width: 300px;
