@@ -1,5 +1,9 @@
 .blog {
 
+  @media (min-width: @sm) {
+    padding-top: 30px;
+  }
+
   .title-container {
     padding-top: 20px;
     padding-bottom: 40px;
@@ -14,10 +18,14 @@
 
   img {
     width: 90px;
+
   }
 
-  @media (min-width: @sm) {
-    margin-top: 40px;
+  .header {
+    @media (min-width: @sm) {
+      margin-left: 25px;
+      font-size: 46px;
+    }
   }
 
 
@@ -27,6 +35,7 @@
 
     @media (min-width: @sm) {
       margin-top: 30px;
+      text-align: left;
 
     }
 
