@@ -2035,14 +2035,16 @@ h6 {
 .footer .fa {
   font-size: 1.5em;
 }
-.about {
-  margin-bottom: 40px;
-}
 .about .title-container {
+  padding-top: 30px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .about .info-container {
   margin-top: 20px;
+}
+.about .meta {
+  font-size: 18px;
 }
 .landing {
   background-color: #cfe7f0;
