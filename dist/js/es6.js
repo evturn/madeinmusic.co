@@ -64,6 +64,11 @@ var MIM = {
   },
 
   getLandingHeight: function getLandingHeight() {
+
+    if (window.location.pathname !== '/') {
+      return false;
+    }
+
     var windowHeight = $(window).height(),
         $landing = $('.landing'),
         aboutOffset = $('.about').offset().top;
