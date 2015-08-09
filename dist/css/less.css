@@ -2333,7 +2333,7 @@ a {
   left: 0;
   right: 0;
 }
-.blog img {
+.blog .title-container .img-backend img {
   width: 90px;
 }
 @media (min-width: 600px) {
