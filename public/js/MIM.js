@@ -31,9 +31,14 @@ const MIM = {
         paddingTop = padding / 2,
         paddingBottom = padding;
 
+
+    if (windowWidth <= 320) {
+      paddingTop = 25;
+      paddingBottom = 60;
+    }
+
     $btnContainer.css({'paddingTop': paddingTop})
                  .css({'paddingBottom': paddingBottom});
-
   },
 
   applyHeight() {
