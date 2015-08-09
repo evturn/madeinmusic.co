@@ -1924,6 +1924,10 @@ a {
 .visible {
   display: block;
 }
+#wrap #header {
+  background-color: #ffffff;
+  color: #cfe7f0;
+}
 .navbar {
   background: transparent;
   font-family: 'Raleway', sans-serif;

@@ -36,7 +36,12 @@ keystone.init({
   'user model': 'User',
   'cookie secret': 'b3w3q>1NgA1RQl90Qr[ayX&_P67LCvtIVwLkUt*g?6-kpT#h<e"`Cl3FkT;$W,xg',
 
-  'wysiwyg importcss': '../../css/less.css',
+  'wysiwyg importcss': [
+    '../../css/vendor.css',
+    '../../css/style.css',
+    '../../css/less.css'
+  ],
+
   'wysiwyg additional plugins': 'importcss',
   'wysiwyg additional options': {
     importcss_append: true,
