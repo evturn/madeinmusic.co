@@ -24,24 +24,39 @@
   li {
     text-transform: uppercase;
     display: inline-block;
-    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid @black;
 
-    &:nth-child(4) {
-      margin-right: 0;
+    &:last-child {
+      border-right: 0;
     }
 
 
     @media(min-width: @sm) {
+      border-right: 0;
       font-size: 16px;
       margin-right: 20px;
+    }
+
+    a.all {
+      font-size: 13px;
+
+      @media (min-width: @iphone6) {
+        font-size: 16px;
+      }
+
+      @media (min-width: @xs) {
+        font-size: 19px;
+      }
     }
 
 
     a {
       color: @black;
-      vertical-align: -webkit-baseline-middle;
       text-decoration: none;
       font-size: 16px;
+      vertical-align: baseline;
 
       @media (min-width: @iphone6) {
         font-size: 20px;
@@ -49,6 +64,7 @@
 
 
       @media (min-width: @sm) {
+        vertical-align: -webkit-baseline-middle;
         color: @standard-dark;
       }
     }

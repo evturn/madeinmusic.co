@@ -1949,22 +1949,38 @@ a {
 .navbar li {
   text-transform: uppercase;
   display: inline-block;
-  margin-right: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid #000000;
 }
-.navbar li:nth-child(4) {
-  margin-right: 0;
+.navbar li:last-child {
+  border-right: 0;
 }
 @media (min-width: 600px) {
   .navbar li {
+    border-right: 0;
     font-size: 16px;
     margin-right: 20px;
   }
 }
+.navbar li a.all {
+  font-size: 13px;
+}
+@media (min-width: 375px) {
+  .navbar li a.all {
+    font-size: 16px;
+  }
+}
+@media (min-width: 400px) {
+  .navbar li a.all {
+    font-size: 19px;
+  }
+}
 .navbar li a {
   color: #000000;
-  vertical-align: -webkit-baseline-middle;
   text-decoration: none;
   font-size: 16px;
+  vertical-align: baseline;
 }
 @media (min-width: 375px) {
   .navbar li a {
@@ -1973,6 +1989,7 @@ a {
 }
 @media (min-width: 600px) {
   .navbar li a {
+    vertical-align: -webkit-baseline-middle;
     color: #46758e;
   }
 }

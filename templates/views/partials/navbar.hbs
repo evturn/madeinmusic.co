@@ -3,21 +3,21 @@
     <ul class="navbar-links">
       {{# each navLinks}}
 
-      <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
-
         {{#ifeq ../section 'home'}}
           {{! If URL is matches 'home'}}
           {{#ifeq key 'home'}}
             {{! Do not render home in navbar}}
           {{else}}
-            <a href="{{ href }}">{{ label }}</a>
+            <li><a href="{{ href }}">{{ label }}</a></li>
           {{/ifeq}}
 
         {{else}}
-            {{! Any URL other than 'home' then render all navLinks}}
-          <a href="{{ href }}">{{ label }}</a>
+
+          {{! Any URL other than 'home' then render all navLinks}}
+          <li {{#ifeq ../section key}}class="active"{{else}}{{/ifeq}}>
+            <a class="all" href="{{ href }}">{{ label }}</a>
+          </li>
         {{/ifeq}}
-      </li>
 
       {{/each}}
     </ul>
