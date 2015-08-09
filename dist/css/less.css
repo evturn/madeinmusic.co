@@ -1924,6 +1924,9 @@ a {
 .navbar {
   background: transparent;
   font-family: 'Raleway', sans-serif;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
 }
 @media (min-width: 600px) {
   .navbar {
@@ -1954,6 +1957,7 @@ a {
 @media (min-width: 600px) {
   .navbar li {
     font-size: 16px;
+    margin-right: 20px;
   }
 }
 .navbar li a {
