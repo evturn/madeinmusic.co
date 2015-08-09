@@ -24,7 +24,7 @@ var MIM = {
       return false;
     }
 
-    $btnContainer.css({ 'paddingTop': padding / 4 }).css({ 'paddingBottom': padding });
+    $btnContainer.css({ 'paddingTop': padding / 2 }).css({ 'paddingBottom': padding / 2 });
   },
 
   triggerPreloader: function triggerPreloader() {
