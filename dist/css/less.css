@@ -2322,22 +2322,17 @@ h6 {
   margin-top: 40px;
 }
 .header {
+  text-shadow: 14px 10px 4px #cfe7f0, 1px 2px 1px #ffffff;
   font-size: 36px;
 }
 .title-container .img-backend {
   bottom: -30px;
   font-family: "Cochin";
-  font-size: 120px;
   left: 0;
   position: absolute;
   right: 0;
   z-index: -1;
   height: initial;
-  line-height: 120px;
-}
-.title-container .img-backend .header {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 .btn {
   display: inline-block;
