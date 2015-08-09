@@ -2055,6 +2055,9 @@ a {
   height: 30px;
   border-bottom: 1px solid #bfbfbf;
 }
+.contact .contact-textarea {
+  border-bottom: 1px solid #bfbfbf;
+}
 .landing {
   background-color: #cfe7f0;
 }
