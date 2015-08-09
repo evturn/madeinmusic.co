@@ -1,20 +1,29 @@
-.landing {
+.landing .description-container {
+  margin-top: 40px;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
 
-  .description-container {
-    margin-top: 40px;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    @media (min-width: @sm) {
-      float: right;
-      width: 50%;
-    }
-
-    .meta {
-      line-height: 1.7em;
-      font-size: 22px;
-    }
-
+  @media (min-width: @sm) {
+    float: right;
+    width: 40%;
+    margin-top: initial;
+    padding: 0;
   }
+
+  @media (min-width: @md) {
+    width: 50%;
+    text-align: center;
+  }
+
+  .meta {
+    line-height: 1.7em;
+    font-size: 22px;
+
+    @media (min-width: @md) {
+      max-width: 300px;
+      display: inline-block;
+    }
+  }
+
 }

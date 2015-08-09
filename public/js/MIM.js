@@ -74,3 +74,7 @@ const MIM = {
 $(document).on('ready', function() {
   MIM.init();
 });
+
+$(window).resize(function() {
+  // MIM.makeLandingFullHeight();
+});

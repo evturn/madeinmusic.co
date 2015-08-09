@@ -2058,6 +2058,9 @@ a {
   .landing {
     margin-top: 50px;
   }
+  .landing .group-desktop {
+    overflow: auto;
+  }
 }
 .landing .image-container {
   display: block;
@@ -2065,6 +2068,7 @@ a {
   margin-left: auto;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 .landing .image-container .inner-text {
   position: absolute;
@@ -2077,6 +2081,12 @@ a {
 @media (min-width: 375px) {
   .landing .image-container .inner-text {
     top: 44px;
+  }
+}
+@media (min-width: 600px) {
+  .landing .image-container .inner-text {
+    left: 60px;
+    top: 60px;
   }
 }
 .landing .image-container .subhead {
@@ -2093,10 +2103,26 @@ a {
   }
 }
 @media (min-width: 600px) {
+  .landing .image-container .subhead {
+    font-size: 40px;
+  }
+}
+@media (min-width: 700px) {
+  .landing .image-container .subhead {
+    font-size: 54px;
+  }
+}
+@media (min-width: 600px) {
   .landing .image-container {
     float: left;
-    width: 40%;
+    width: 60%;
     text-align: left;
+  }
+}
+@media (min-width: 800px) {
+  .landing .image-container {
+    width: 50%;
+    text-align: center;
   }
 }
 .landing .image-container .img-scale {
@@ -2112,7 +2138,9 @@ a {
 @media (min-width: 600px) {
   .landing .image-container .img-scale {
     display: inline-block;
-    max-width: 400px;
+    width: inherit;
+    min-width: 150px;
+    max-width: 260px;
   }
 }
 .landing .btn-container {
@@ -2120,7 +2148,14 @@ a {
   width: 100%;
   text-align: center;
 }
-.landing .btn-red {
+@media (min-width: 600px) {
+  .landing .btn-container {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+.landing .btn-container .btn-red {
   cursor: pointer;
   height: 70px;
   text-decoration: none;
@@ -2135,12 +2170,26 @@ a {
 @media (min-width: 600px) {
   .landing .description-container {
     float: right;
+    width: 40%;
+    margin-top: initial;
+    padding: 0;
+  }
+}
+@media (min-width: 800px) {
+  .landing .description-container {
     width: 50%;
+    text-align: center;
   }
 }
 .landing .description-container .meta {
   line-height: 1.7em;
   font-size: 22px;
+}
+@media (min-width: 800px) {
+  .landing .description-container .meta {
+    max-width: 300px;
+    display: inline-block;
+  }
 }
 .blog {
   margin-top: 20px;

@@ -1,11 +1,14 @@
-.landing {
-
-  .btn-container {
+.landing .btn-container {
     display: block;
     width: 100%;
     text-align: center;
 
-  }
+    @media (min-width: @sm) {
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
 
   .btn-red {
     cursor: pointer;

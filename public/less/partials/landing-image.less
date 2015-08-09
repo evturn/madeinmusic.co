@@ -1,57 +1,76 @@
-.landing {
+.landing .image-container {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+  position: relative;
 
-  .image-container {
-    display: block;
-    margin-right: auto;
+  .inner-text {
+    position: absolute;
+    top: 25px;
+    left: -4px;
     margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    text-align: center;
 
-    .inner-text {
-      position: absolute;
-      top: 25px;
-      left: -4px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 100%;
-
-      @media (min-width: @iphone6) {
-        top: 44px;
-      }
-    }
-
-    .subhead {
-      color: @black;
-      font-size: 23px;
-      font-family: @sans-serif;
-      text-transform: uppercase;
-      font-weight: 500;
-      text-shadow: 14px 10px 4px #cfe7f0, 1px 2px 1px #FFF;
-
-      @media (min-width: @iphone6) {
-        font-size: 33px
-      }
+    @media (min-width: @iphone6) {
+      top: 44px;
     }
 
     @media (min-width: @sm) {
-      float: left;
-      width: 40%;
-      text-align: left;
+      left: 60px;
+      top: 60px;
+    }
+  }
+
+  .subhead {
+    color: @black;
+    font-size: 23px;
+    font-family: @sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-shadow: 14px 10px 4px #cfe7f0, 1px 2px 1px #FFF;
+
+    @media (min-width: @iphone6) {
+      font-size: 33px
     }
 
-    .img-scale {
-      width: 125px;
-      margin-left: auto;
-      margin-right: auto;
+    @media(min-width: @sm) {
+      font-size: 40px
+    }
 
-      @media (min-width: @iphone6) {
-        width: 150px;
-      }
+    @media (min-width: 700px) {
+      font-size: 54px;
+    }
+    @media (min-width: @md) {
+    }
+  }
 
-      @media (min-width: @sm) {
-        display: inline-block;
-        max-width: 400px;
-      }
+  @media (min-width: @sm) {
+    float: left;
+    width: 60%;
+    text-align: left;
+  }
+
+  @media (min-width: @md) {
+    width: 50%;
+    text-align: center;
+  }
+  .img-scale {
+    width: 125px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: @iphone6) {
+      width: 150px;
+    }
+
+    @media (min-width: @sm) {
+      display: inline-block;
+      width: inherit;
+      min-width: 150px;
+      max-width: 260px;
     }
   }
 }
