@@ -2008,6 +2008,7 @@ a {
 }
 .contact .title-container {
   padding-top: 20px;
+  padding-bottom: 40px;
 }
 .contact .title-container .img-backend {
   top: 0;
@@ -2017,6 +2018,9 @@ a {
 }
 .contact img {
   width: 90px;
+}
+.contact .form-container {
+  margin-top: 15px;
 }
 .contact .form-container {
   width: 100%;
@@ -2223,17 +2227,18 @@ a {
     display: inline-block;
   }
 }
-.blog {
-  margin-top: 20px;
-}
 .blog .title-container {
-  text-align: center;
   padding-top: 20px;
+  padding-bottom: 40px;
 }
-.blog .img-backend img {
+.blog .title-container .img-backend {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.blog img {
   width: 90px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media (min-width: 600px) {
   .blog {
@@ -2241,7 +2246,6 @@ a {
   }
 }
 .blog .stats-container {
-  margin-top: 15px;
   margin-bottom: 5px;
   text-align: right;
 }
