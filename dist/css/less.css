@@ -1960,7 +1960,6 @@ h6 {
   background: transparent;
   font-family: 'Raleway', sans-serif;
   position: relative;
-  height: 50px;
   margin-top: 20px;
 }
 @media (min-width: 600px) {
@@ -1974,7 +1973,7 @@ h6 {
 }
 @media (min-width: 600px) {
   .navbar ul {
-    margin-top: 10px;
+    height: 50px;
     float: right;
   }
 }
@@ -2063,7 +2062,7 @@ h6 {
 }
 .landing {
   background-color: #cfe7f0;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 @media (min-width: 375px) {
   .landing {
