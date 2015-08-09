@@ -2280,7 +2280,18 @@ h6 {
   font-size: 12px;
 }
 .footer-links {
-  text-align: right;
+  text-align: center;
+  padding-top: 20px;
+}
+.footer-links .fa {
+  color: #ffffff;
+  background-color: #dd4438;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 1.5em;
+  margin: 0 10px;
 }
 .title-container,
 .section-title {
