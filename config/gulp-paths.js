@@ -55,8 +55,7 @@ module.exports = {
     min: 'scripts.min.js',
     vendor: {
       src: [
-        'public/js/vendor/jquery.min.js',
-        'public/js/vendor/bootstrap/bootstrap-3.3.4.js'
+        'public/js/vendor/jquery.min.js'
       ],
       dest: 'dist/js',
       filename: 'vendor.js',

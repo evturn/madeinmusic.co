@@ -14,19 +14,19 @@
         <input type="hidden" name="action" value="contact">
           <div class="input-container {{#if validationErrors.name}}has-error{{/if}}">
             <label>Name</label>
-            <input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
+            <input type="text" name="name.full"  class="contact-input" value="{{formData.[name.full]}}">
           </div>
           <div class="input-container {{#if validationErrors.email}}has-error{{/if}}">
             <label>Email</label>
-            <input type="email" name="email" class="form-control" value="{{formData.email}}">
+            <input type="email" name="email" class="contact-input" value="{{formData.email}}">
           </div>
           <div class="input-container">
             <label>Phone</label>
-            <input type="text" name="phone" placeholder="(optional)" class="form-control" value="{{formData.phone}}">
+            <input type="text" name="phone" placeholder="(optional)" class="contact-input" value="{{formData.phone}}">
           </div>
           <div class="input-container {{#if validationErrors.enquiryType}}has-error{{/if}}">
             <label>What are you contacting us about?</label>
-            <select name="enquiryType" class="form-control">
+            <select name="enquiryType" class="form-control contact-input">
               <option value="">(select one)</option>
               {{#each enquiryTypes}}
               <option value="{{value}}">{{label}}</option>
@@ -35,7 +35,7 @@
           </div>
           <div class="input-container {{#if validationErrors.message}}has-error{{/if}} ">
             <label>Message</label>
-            <textarea name="message" placeholder="Leave us a message..." rows="4" class="form-control">{{formData.message}}</textarea>
+            <textarea name="message" placeholder="Leave us a message..." rows="4" class="contact-textarea">{{formData.message}}</textarea>
           </div>
           <div class="form-actions">
             <button type="submit" class="btn btn-red">Send</button>
