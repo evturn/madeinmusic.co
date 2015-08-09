@@ -2494,22 +2494,25 @@ h6 {
     transform: rotate(359deg);
   }
 }
-.dmtop {
-  background-color: #dd4438;
-  background-image: url(../img/arrow.png);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.scroll-up {
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
   z-index: 9999;
-  width: 40px;
-  height: 40px;
-  text-indent: -99999px;
   position: fixed;
   bottom: -100px;
   right: 25px;
   cursor: pointer;
-  -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
   overflow: auto;
+}
+.scroll-up .fa {
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #dd4438;
   border-radius: 6px;
+  color: #ffffff;
+  font-size: 2em;
+  opacity: 0.2;
 }
