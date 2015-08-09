@@ -2049,6 +2049,18 @@ h6 {
 .contact img {
   width: 90px;
 }
+.contact .input-container {
+  margin-bottom: 5px;
+}
+.contact input {
+  display: inline-block;
+  height: 30px;
+}
+.contact input,
+.contact select,
+.contact textarea {
+  width: 100%;
+}
 .landing {
   background-color: #cfe7f0;
   margin-top: 20px;
