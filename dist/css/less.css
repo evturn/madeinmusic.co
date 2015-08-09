@@ -2476,23 +2476,25 @@ a {
     font-size: 22px;
   }
 }
-.categories .meta a {
+.categories .meta {
   font-size: 14px;
-  color: #46758e;
 }
 @media (min-width: 600px) {
-  .categories .meta a {
+  .categories .meta {
     font-size: 16px;
   }
 }
-.categories .meta a.active a {
+.categories .meta a {
+  color: #46758e;
+}
+.categories .meta.active a {
   font-size: 16px;
   color: #dd4438;
   font-family: 'Lato', sans-serif;
   font-weight: 800;
 }
 @media (min-width: 600px) {
-  .categories .meta a.active a {
+  .categories .meta.active a {
     font-size: 18px;
   }
 }

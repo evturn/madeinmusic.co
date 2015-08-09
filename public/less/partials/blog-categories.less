@@ -54,12 +54,15 @@
     }
   }
 
-  .meta a {
+  .meta {
     font-size: 14px;
-    color: @standard-dark;
 
     @media (min-width: @sm) {
       font-size: 16px;
+    }
+
+    a {
+      color: @standard-dark;
     }
 
     &.active a {
