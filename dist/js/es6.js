@@ -3,11 +3,22 @@
 var MIM = {
 
   init: function init() {
-    MIM.makeLandingFullHeight();
+    MIM.applyHeight();
+    MIM.reapplyHeight();
     MIM.triggerPreloader();
     MIM.triggerScrollUp();
     MIM.showScrollUp();
     MIM.setTitleHeight();
+  },
+
+  setInitialLanding: function setInitialLanding() {
+    var windowWidth = $(window).width();
+
+    if (windowWidth <= 600 && !MIM.height) {
+      MIM.height = MIM.getLandingHeight();
+
+      return MIM.height;
+    }
   },
 
   makeLandingFullHeight: function makeLandingFullHeight() {
@@ -16,15 +27,45 @@ var MIM = {
         $btnContainer = $('.landing .btn-container.mobile'),
         windowWidth = $(window).width(),
         windowHeight = $(window).height(),
-        landingHeight = $landing.outerHeight(true),
         navbarHeight = $navbar.outerHeight(true),
-        padding = windowHeight - (landingHeight + navbarHeight);
+        padding = MIM.height ? MIM.height : MIM.setInitialLanding();
+
+    $btnContainer.css({ 'paddingTop': padding * 0.25 }).css({ 'paddingBottom': padding * 0.75 });
+  },
+
+  applyHeight: function applyHeight() {
+    var windowWidth = $(window).width();
 
     if (windowWidth > 600) {
       return false;
     }
 
-    $btnContainer.css({ 'paddingTop': padding / 2 }).css({ 'paddingBottom': padding / 2 });
+    MIM.makeLandingFullHeight();
+  },
+
+  reapplyHeight: function reapplyHeight(previous) {
+    var breakpoint = 600,
+        $landing = $('.landing'),
+        windowWidth = $(window).width();
+
+    if (previous && previous > breakpoint && windowWidth <= breakpoint) {
+      MIM.makeLandingFullHeight();
+    }
+
+    MIM.previous = windowWidth;
+  },
+
+  getLandingHeight: function getLandingHeight() {
+    var windowHeight = $(window).height(),
+        $landing = $('.landing'),
+        aboutOffset = $('.about').offset().top;
+
+    if (aboutOffset < windowHeight) {
+      return aboutOffset;
+    } else {
+      var landingHeight = $('.landing').outerHeight(true);
+      return landingHeight;
+    }
   },
 
   triggerPreloader: function triggerPreloader() {
@@ -72,5 +113,5 @@ $(document).on('ready', function () {
 });
 
 $(window).resize(function () {
-  // MIM.makeLandingFullHeight();
+  MIM.reapplyHeight(MIM.previous);
 });

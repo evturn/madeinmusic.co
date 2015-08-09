@@ -1935,8 +1935,8 @@ a {
   }
 }
 .navbar ul {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   float: none;
   text-align: center;
 }
@@ -2054,6 +2054,9 @@ a {
 .landing {
   background-color: #cfe7f0;
 }
+.landing .group-desktop {
+  padding-top: 20px;
+}
 @media (min-width: 600px) {
   .landing .group-desktop {
     overflow: auto;
@@ -2062,6 +2065,7 @@ a {
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding-top: 0;
     padding-left: 25px;
     padding-right: 25px;
   }

@@ -1,11 +1,22 @@
 const MIM = {
 
   init() {
-    MIM.makeLandingFullHeight();
+    MIM.applyHeight();
+    MIM.reapplyHeight();
     MIM.triggerPreloader();
     MIM.triggerScrollUp();
     MIM.showScrollUp();
     MIM.setTitleHeight();
+  },
+
+  setInitialLanding() {
+    let windowWidth = $(window).width();
+
+    if (windowWidth <= 600 && !MIM.height) {
+      MIM.height = MIM.getLandingHeight()
+
+      return MIM.height;
+    }
   },
 
   makeLandingFullHeight() {
@@ -14,17 +25,51 @@ const MIM = {
         $btnContainer = $('.landing .btn-container.mobile'),
         windowWidth = $(window).width(),
         windowHeight = $(window).height(),
-        landingHeight = $landing.outerHeight(true),
         navbarHeight = $navbar.outerHeight(true),
-        padding = windowHeight - (landingHeight + navbarHeight);
+        padding = MIM.height ? MIM.height : MIM.setInitialLanding();
+
+    $btnContainer.css({'paddingTop': padding * 0.25})
+                 .css({'paddingBottom': padding * 0.75});
+
+  },
+
+  applyHeight() {
+    let windowWidth = $(window).width();
 
     if (windowWidth > 600) {
       return false
     }
 
-    $btnContainer.css({'paddingTop': padding / 2})
-                 .css({'paddingBottom': padding / 2});
+    MIM.makeLandingFullHeight();
+
   },
+
+  reapplyHeight(previous) {
+    let breakpoint = 600,
+        $landing = $('.landing'),
+        windowWidth = $(window).width();
+
+    if (previous && (previous > breakpoint) && (windowWidth <= breakpoint)) {
+      MIM.makeLandingFullHeight();
+    }
+
+    MIM.previous = windowWidth;
+  },
+
+  getLandingHeight() {
+    let windowHeight = $(window).height(),
+        $landing = $('.landing'),
+        aboutOffset = $('.about').offset().top;
+
+      if (aboutOffset < windowHeight) {
+        return aboutOffset;
+
+      }
+      else {
+        let landingHeight = $('.landing').outerHeight(true)
+        return landingHeight;
+      }
+    },
 
   triggerPreloader() {
 
@@ -76,5 +121,5 @@ $(document).on('ready', function() {
 });
 
 $(window).resize(function() {
-  // MIM.makeLandingFullHeight();
+  MIM.reapplyHeight(MIM.previous);
 });
