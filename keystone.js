@@ -34,7 +34,18 @@ keystone.init({
   'session': true,
   'auth': true,
   'user model': 'User',
-  'cookie secret': 'b3w3q>1NgA1RQl90Qr[ayX&_P67LCvtIVwLkUt*g?6-kpT#h<e"`Cl3FkT;$W,xg'
+  'cookie secret': 'b3w3q>1NgA1RQl90Qr[ayX&_P67LCvtIVwLkUt*g?6-kpT#h<e"`Cl3FkT;$W,xg',
+
+  'wysiwyg importcss': '../../css/less.css',
+  'wysiwyg additional plugins': 'importcss',
+  'wysiwyg additional options': {
+    importcss_append: true,
+    forced_root_block_attrs: {
+      'class': 'meta'
+    }
+  },
+  'wysiwyg images': true,
+  'wysiwyg cloudinary images': true
 
 });
 

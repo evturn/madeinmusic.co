@@ -2418,6 +2418,7 @@ a {
     padding: 15px 25px 25px;
   }
 }
+.blog-item p span,
 .blog-item .meta {
   line-height: 1.4em;
 }
