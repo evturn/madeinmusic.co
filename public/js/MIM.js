@@ -12,10 +12,15 @@ const MIM = {
     let $landing = $('.landing'),
         $navbar = $('.navbar'),
         $btnContainer = $('.landing .btn-container'),
+        windowWidth = $(window).width(),
         windowHeight = $(window).height(),
         landingHeight = $landing.outerHeight(true),
         navbarHeight = $navbar.outerHeight(true),
         padding = windowHeight - (landingHeight + navbarHeight);
+
+    if (windowWidth > 400) {
+      return false
+    }
 
     $btnContainer.css({'paddingTop': padding / 4})
                  .css({'paddingBottom': padding});
