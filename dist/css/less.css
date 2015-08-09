@@ -1869,7 +1869,7 @@
 }
 body,
 html {
-  height: 100%;
+  position: relative;
 }
 .hidden {
   display: none;
@@ -2281,13 +2281,12 @@ h6 {
   text-decoration: none;
 }
 .footer {
-  margin: 0;
+  bottom: -20;
+  left: 0;
   padding: 20px 0;
   color: #46758e;
   text-align: center;
   position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
 }
 .footer .caption {

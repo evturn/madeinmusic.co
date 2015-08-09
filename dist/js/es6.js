@@ -4,7 +4,9 @@ var MIM = {
 
   init: function init() {
     MIM.makeLandingFullHeight();
-    MIM.preloader();
+    MIM.triggerPreloader();
+    MIM.triggerScrollUp();
+    MIM.showScrollUp();
   },
 
   makeLandingFullHeight: function makeLandingFullHeight() {
@@ -18,7 +20,8 @@ var MIM = {
     $landing.css({ 'paddingBottom': padding });
   },
 
-  preloader: function preloader() {
+  triggerPreloader: function triggerPreloader() {
+
     $(window).load(function () {
       var $container = $('#preloader'),
           $image = $('.preloader');
@@ -26,28 +29,30 @@ var MIM = {
       $container.delay(500).fadeOut();
       $image.delay(600).fadeOut('slow');
     });
+  },
+
+  showScrollUp: function showScrollUp() {
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 1) {
+        $('.scroll-up').css({ bottom: '25px' });
+      } else {
+        $('.scroll-up').css({ bottom: '-100px' });
+      }
+    });
+  },
+
+  triggerScrollUp: function triggerScrollUp() {
+
+    $('.scroll-up').click(function () {
+      $('html, body').animate({ scrollTop: '0px' }, 800);
+
+      return false;
+    });
   }
 
 };
 
 $(document).on('ready', function () {
   MIM.init();
-});
-'use strict';
-
-$(function () {
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 1) {
-            $('.scroll-up').css({ bottom: '25px' });
-        } else {
-            $('.scroll-up').css({ bottom: '-100px' });
-        }
-    });
-    $('.scroll-up').click(function () {
-        $('html, body').animate({ scrollTop: '0px' }, 800);
-        return false;
-    });
-
-    $('[data-toggle="tooltip"]').tooltip();
 });

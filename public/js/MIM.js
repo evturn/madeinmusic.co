@@ -2,7 +2,9 @@ const MIM = {
 
   init() {
     MIM.makeLandingFullHeight();
-    MIM.preloader();
+    MIM.triggerPreloader();
+    MIM.triggerScrollUp();
+    MIM.showScrollUp();
   },
 
   makeLandingFullHeight() {
@@ -16,7 +18,8 @@ const MIM = {
     $landing.css({'paddingBottom': padding});
   },
 
-  preloader: function() {
+  triggerPreloader() {
+
     $(window).load(function() {
       let $container = $('#preloader'),
           $image = $('.preloader');
@@ -24,7 +27,32 @@ const MIM = {
       $container.delay(500).fadeOut();
       $image.delay(600).fadeOut('slow');
     });
+
   },
+
+  showScrollUp() {
+
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 1) {
+        $('.scroll-up').css({bottom: '25px'});
+      }
+      else {
+        $('.scroll-up').css({bottom: '-100px'});
+      }
+    });
+
+  },
+
+  triggerScrollUp() {
+
+    $('.scroll-up').click(function(){
+      $('html, body').animate({scrollTop: '0px'}, 800);
+
+      return false;
+    });
+
+  },
+
 
 };
 
