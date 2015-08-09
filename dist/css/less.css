@@ -2014,20 +2014,38 @@ a {
 .contact img {
   width: 90px;
 }
+.contact .form-container {
+  width: 100%;
+  overflow: hidden;
+}
 .contact .input-container {
-  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
-.contact label {
-  display: inline-block;
-}
-.contact input {
-  display: inline-block;
-  height: 30px;
+.contact label span {
+  font-size: 12px;
 }
 .contact input,
 .contact select,
+.contact option,
 .contact textarea {
-  width: 100%;
+  display: block;
+  font-size: 21px;
+  width: 98%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+.contact select,
+.contact .contact-select option {
+  color: #46758e;
+  font-size: 18px;
+  height: 30px;
+}
+.contact .contact-input {
+  height: 30px;
+  border-bottom: 1px solid #bfbfbf;
 }
 .landing {
   background-color: #cfe7f0;

@@ -1,24 +1,41 @@
 .contact {
 
   .form-container {
-
+    width: 100%;
+    overflow: hidden;
   }
 
   .input-container {
-    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
   }
 
-  label {
-    display: inline-block;
-  }
-  input {
-    display: inline-block;
-    height: 30px;
+  label span {
+    font-size: 12px;
   }
 
   input,
   select,
+  option,
   textarea {
-    width: 100%;
+    display: block;
+    font-size: 21px;
+    width: 98%;
+    border: none;
+    background-color: transparent;
+    outline: none;
   }
+
+  select,
+  .contact-select option {
+    color: @standard-dark;
+    font-size: 18px;
+    height: 30px;
+  }
+  .contact-input {
+    height: 30px;
+    border-bottom: 1px solid @grey;
+  }
+
 }
