@@ -25,38 +25,34 @@
 
     {{> navbar }}
 
-    <div id="body">
-
-      {{#if messages}}
-      <div id="flash-messages" class="container">
-        {{#if messages.info}}
-        <div class="alert alert-info">
-            {{{flashMessages messages.info}}}
-        </div>
-        {{/if}}
-        {{#if messages.success}}
-        <div class="alert alert-success">
-            {{{flashMessages messages.success}}}
-        </div>
-        {{/if}}
-        {{#if messages.warning}}
-        <div class="alert alert-warning">
-            {{{flashMessages messages.warning}}}
-        </div>
-        {{/if}}
-        {{#if messages.error}}
-        <div class="alert alert-danger">
-            {{{flashMessages messages.error}}}
-        </div>
-        {{/if}}
+    {{#if messages}}
+    <div id="flash-messages" class="container">
+      {{#if messages.info}}
+      <div class="alert alert-info">
+          {{{flashMessages messages.info}}}
       </div>
       {{/if}}
-
-
-      {{{body}}}
-
+      {{#if messages.success}}
+      <div class="alert alert-success">
+          {{{flashMessages messages.success}}}
+      </div>
+      {{/if}}
+      {{#if messages.warning}}
+      <div class="alert alert-warning">
+          {{{flashMessages messages.warning}}}
+      </div>
+      {{/if}}
+      {{#if messages.error}}
+      <div class="alert alert-danger">
+          {{{flashMessages messages.error}}}
+      </div>
+      {{/if}}
     </div>
+    {{/if}}
 
+    {{{body}}}
+
+    {{> footer-links }}
     {{> footer }}
 
     <script src="/js/vendor.js"></script>

@@ -2007,34 +2007,6 @@ h6 {
     color: #46758e;
   }
 }
-.footer {
-  bottom: 0;
-  left: 0;
-  margin: 0;
-  padding-top: 20px;
-  color: #46758e;
-  text-align: left;
-}
-.footer ul {
-  margin-bottom: 10px;
-}
-.footer li {
-  display: inline-block;
-  margin-right: 2px;
-}
-.footer a {
-  text-decoration: none;
-  font-size: 11px;
-  color: #46758e;
-}
-.footer p {
-  text-align: center;
-  font-size: 10px;
-  margin-bottom: 10px;
-}
-.footer .fa {
-  font-size: 1.5em;
-}
 .about .title-container {
   padding-top: 30px;
   margin-top: 40px;
@@ -2294,6 +2266,21 @@ h6 {
 .pagination a {
   color: #000000;
   text-decoration: none;
+}
+.footer {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #46758e;
+  text-align: center;
+}
+.footer .caption {
+  font-size: 12px;
+}
+.footer-links {
+  text-align: right;
 }
 .title-container,
 .section-title {
