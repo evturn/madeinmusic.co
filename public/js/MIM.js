@@ -5,6 +5,7 @@ const MIM = {
     MIM.triggerPreloader();
     MIM.triggerScrollUp();
     MIM.showScrollUp();
+    MIM.setTitleHeight();
   },
 
   makeLandingFullHeight() {
@@ -51,6 +52,13 @@ const MIM = {
       return false;
     });
 
+  },
+
+  setTitleHeight() {
+    let imageHeight = $('.contact img').height(),
+        $container = $('.contact .title-container');
+
+        $container.css({'height': imageHeight});
   },
 
 

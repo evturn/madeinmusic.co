@@ -2037,6 +2037,18 @@ h6 {
   font-size: 20px;
   line-height: 1.4em;
 }
+.contact .title-container {
+  padding-top: 20px;
+}
+.contact .title-container .img-backend {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.contact img {
+  width: 90px;
+}
 .landing {
   background-color: #cfe7f0;
   margin-top: 20px;
