@@ -1,14 +1,23 @@
 .landing .btn-container {
-    display: block;
     width: 100%;
     text-align: center;
 
-    @media (min-width: @sm) {
-      text-align: center;
-      padding-top: 20px;
-      padding-bottom: 40px;
+
+    &.mobile {
+      display: block;
+
+      @media (min-width: @sm) {
+        display: none;
+      }
     }
 
+    &.desktop {
+      display: none;
+
+      @media (min-width: @sm) {
+        display: block;
+      }
+    }
 
   .btn-red {
     cursor: pointer;
@@ -16,5 +25,6 @@
     text-decoration: none;
     font-size: 22px;
   }
+
 
 }

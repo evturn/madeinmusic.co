@@ -1,10 +1,19 @@
 .landing {
   background-color: @standard;
 
-  @media (min-width: @sm) {
-    margin-top: 50px;
-    .group-desktop {
+  .group-desktop {
+    @media (min-width: @sm) {
       overflow: auto;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @media (min-width: @md) {
+      max-width: 1050px;
     }
   }
 }

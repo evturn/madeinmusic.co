@@ -11,7 +11,7 @@ const MIM = {
   makeLandingFullHeight() {
     let $landing = $('.landing'),
         $navbar = $('.navbar'),
-        $btnContainer = $('.landing .btn-container'),
+        $btnContainer = $('.landing .btn-container.mobile'),
         windowWidth = $(window).width(),
         windowHeight = $(window).height(),
         landingHeight = $landing.outerHeight(true),

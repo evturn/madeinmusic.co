@@ -2055,11 +2055,20 @@ a {
   background-color: #cfe7f0;
 }
 @media (min-width: 600px) {
-  .landing {
-    margin-top: 50px;
-  }
   .landing .group-desktop {
     overflow: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+@media (min-width: 800px) {
+  .landing .group-desktop {
+    max-width: 1050px;
   }
 }
 .landing .image-container {
@@ -2144,15 +2153,23 @@ a {
   }
 }
 .landing .btn-container {
-  display: block;
   width: 100%;
   text-align: center;
 }
+.landing .btn-container.mobile {
+  display: block;
+}
 @media (min-width: 600px) {
-  .landing .btn-container {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
+  .landing .btn-container.mobile {
+    display: none;
+  }
+}
+.landing .btn-container.desktop {
+  display: none;
+}
+@media (min-width: 600px) {
+  .landing .btn-container.desktop {
+    display: block;
   }
 }
 .landing .btn-container .btn-red {
@@ -2173,12 +2190,18 @@ a {
     width: 40%;
     margin-top: initial;
     padding: 0;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 800px) {
   .landing .description-container {
     width: 50%;
     text-align: center;
+  }
+}
+@media (min-width: 1000px) {
+  .landing .description-container {
+    margin-top: 30px;
   }
 }
 .landing .description-container .meta {
