@@ -42,6 +42,7 @@ module.exports = {
   js: {
     src: [
       'public/js/MIM.js',
+      'public/js/MIM.landing.js',
       '!public/js/vendor/**/*.js',
       '!public/js/bootstrap/**/*.js',
       '!public/js/jquery/**/*.js'
